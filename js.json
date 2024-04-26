@@ -2,7 +2,7 @@
 "spider":"./jar/pg.jar;md5;7220fdfda5e9dbc5521baf2b25d8706c",
 "lives":[{"name":"初秋语","type":0,"url":"./list.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
 {"name":"Ray","type":0,"url":"https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}
-]，
+],
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "sites":[
 {"key":"drpy_js_豆瓣","name":"搜索 | 豆瓣[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js","searchable":1,"quickSearch":0,"changeable":0},
@@ -11,7 +11,7 @@
 {"key":"豆瓣","name":"搜索 | 豆瓣[jar]","type":3,"api":"csp_Douban","searchable":0,"changeable":1,"ext":"./json/douban.json"},
 {"key":"配置中心","name":"配置 | 中心[jar]","type":3,"api":"csp_Config","searchable":0,"changeable":0,"style":{"type":"rect","ratio":1},"ext":"http://127.0.0.1:9978/file/TV/token.json"},
 {"key":"荐片弹幕版","name":"弹幕 | 荐片[jar]","type":3,"api":"csp_Jianpian","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/jianpian.json$$$1", "timeout":60},
-{"key":"Bdys_spider","name":"弹幕 | 哔滴[jar]","api":"csp_Bdys01","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":"https://www.bdys03.com/$$$null$$$1"，"timeout":30},
+{"key":"Bdys_spider","name":"弹幕 | 哔滴[jar]","api":"csp_Bdys01","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":"https://www.bdys03.com/$$$null$$$1","timeout":30},
 {"key": "天天","name": "弹幕 | 天天[jar]","type": 3,"api": "csp_TTian","playerType": 1,"ext": "http://op.ysdqjs.cn$$$null$$$1"},
 {"key": "追剧","name": "弹幕 | 追剧[jar]","type": 3,"api": "csp_TTian","playerType": 1,"ext": "http://app.kzjtv.com$$$null$$$1"},
 {"key":"NanGua","name":"弹幕 | 南瓜[jar]","type":3,"api":"csp_NanGua","searchable":1,"changeable":1,"ext":"null$$$1"},
