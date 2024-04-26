@@ -4,9 +4,10 @@ var rule = {
     title: '厂长资源',
     //host: 'https://www.czzy88.com',
     // host:'https://www.czzy.site',
-     host:'https://cz01.vip',
+     //host:'https://cz01.vip',
+	let host = 'https://cz01.vip/'; // 厂长地址发布页
      host:`js:
-     print(HOST);
+    // print(HOST);
      let html=request(HOST,{headers:{"User-Agent":PC_UA}});
      HOST = html.match(/推荐访问<a href="(.*)"/)[1];
      print("厂长跳转地址 =====> " + HOST)'`，
@@ -25,6 +26,7 @@ var rule = {
     filterable: 0,
     headers: {
         'User-Agent': 'MOBILE_UA',
+        'UA':'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
         'Cookie': 'esc_search_captcha=1'
     },
     class_name: '全部&豆瓣电影Top250&高分影视&最新电影&热映中&站长推荐&电影&电视剧&动画&国产剧&日剧&韩剧&美剧&海外剧&俄罗斯电影&加拿大电影&华语电影&印度电影&日本电影&欧美电影&法国电影&英国电影&韩国电影&纪录片',
