@@ -5,7 +5,12 @@ var rule = {
     //host: 'https://www.czzy88.com',
     // host:'https://www.czzy.site',
      host:'https://cz01.vip',
-     hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = html.match(/推荐访问<a href="(.*)"/)[1];print("厂长跳转地址 =====> " + HOST)',
+     host:`js:
+     print(HOST);
+     let html=request(HOST,{headers:{"User-Agent":PC_UA}});
+     HOST = html.match(/推荐访问<a href="(.*)"/)[1];
+     print("厂长跳转地址 =====> " + HOST)'`，
+
     url: '/fyclassfyfilter',
     filterable: 1,//是否启用分类筛选,
     filter_url: '{{fl.cateId}}{{fl.class}}{{fl.area}}/page/fypage',
@@ -52,7 +57,7 @@ var rule = {
             eval(scrpt.replace(/md5/g, 'CryptoJS').replace('eval', 'data = '));
             input = {
                 jx: 0,
-                url: data.match(/url:.*?[\\'\\"](.*?)[\\'\\"]/)[1],
+                url: data.match(/url:.*?[\\'\\"](.*?)[\\'\\"]/)[1]，
                 parse: 0
             }
         } else {
