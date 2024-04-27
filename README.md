@@ -32,45 +32,18 @@ js.json  jar包来源于Panda Groove的go包，资源来源于道长drpy(js)仓�
 
 （3）okjack：https://jihulab.com/okcaptain/kko/raw/main/ok.txt
 
-（4）霜辉月明py：https://999740.xyz/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json
+（4）霜辉月明py：https://github.moeyy.xyz/https://raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json
 
 （5）小米小爆脾气：http://xhww.fun/小米/DEMO.json
 
-（6）菜妮丝：https://tvbox.cainisi.cf
+（6）巧技：http://pandown.pro/tvbox/tvbox.json
 
-（7）南风：https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json
-
-（8）神器：https://神器每日推送.tk/pz.json
-
-（9）巧技：http://pandown.pro/tvbox/tvbox.json
-
-（10）Ray：https://100km.top/0
+（7）Ray：https://100km.top/0
 
 4. 随机轮换壁纸：
 
-（1）https://jianbian.chuqiuyu.workers.dev 自制极简渐变壁纸
+https://jianbian.chuqiuyu.workers.dev 自制极简渐变壁纸
 
-（2）http://www.kf666888.cn/api/tvbox/img
-
-（3）https://picsum.photos/1280/720/?blur=10
-
-（4）http://刚刚.live/图 
-
-（5）http://饭.eu.org/深色壁纸/api.php,
-
-（6）https://www.dmoe.cc/random.php
-
-（7）https://api.btstu.cn/sjbz/zsy.php
-
-（8）https://api.btstu.cn/sjbz/?lx=dongman
-
-（9）http://api.btstu.cn/sjbz/?lx=meizi
-
-（10）http://api.btstu.cn/sjbz/?lx=suiji
-
-（11）https://pictures.catvod.eu.org/
-
-（12）https://bing.img.run/rand.php
 
 自用仓库，如果喜欢，请Fork自用，谢谢！
 
