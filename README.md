@@ -10,22 +10,9 @@ FongMi影视、TVBox、猫影视配置文件。所有资源均来自于各路大
 
 
 1. tvbox配置：
+js.json  jar包来源于Panda Groove的go包，资源来源于道长drpy(js)仓库；
 
-（1）0707.json  Fengmi影视多线配置接口,仅适用于Fengmi影视；
-
-（2）0821.json  在饭太硬配置的基础上添加了若干优质点播源、直播线路和解析；
-
-（3）0825.json  jar包来源于Panda Groove的jar，PG网盘的用法请看https://github.com/gaotianliuyun/gao/blob/gaotianliuyun-patch-1/README.md ；
-
-（4）0826.json  完全来源于饭太硬的jar包和配置；
-
-（5）0827.json  jar包和配置来源于fongmi；
-
-（6）js.json  jar包来源于Panda Groove的go包，资源来源于道长drpy(js)仓库；
-
-（7）XYQ.json  XYQ源，jar包和配置来源于香雅情；
-
-（8）/cat/js/  cat源来源于sc03209大佬
+/cat/js/  cat源来源于sc03209大佬
 
 2. APP推荐:
 
