@@ -25,7 +25,7 @@ FongMi影视、TVBox、猫影视配置文件。所有资源均来自于各路大
 
 （7）XYQ.json  XYQ源，jar包和配置来源于香雅情；
 
-（8）/cat/js/config_open.json  cat源，资源暂停更新，如果有能力的大佬愿意发电，请联系我。
+（8）/cat/js/  cat源来源于sc03209大佬
 
 2. APP推荐:
 
