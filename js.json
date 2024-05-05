@@ -1,5 +1,5 @@
 {
-"spider":"./jar/pg.jar;md5;8c6e049d99fcce701ee1e02bdaac7992",
+"spider":"./jar/pg.jar;md5;d043e082374d30527f0b2b408bc826ff",
 "lives":[{"name":"IPTV6","type":0,"url":"./IPTV6.txt","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"},{"name":"migu_tv","type":0,"url":"./migu_tv.txt","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"},{"name":"YueChan_IPTV6","type":0,"url":"https://github.moeyy.xyz/https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"},{"name":"fanmingming_IPTV6","type":0,"url":"https://github.moeyy.xyz/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6Plus.m3u","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"},
 {"name":"dxawi","type":0,"url":"https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"}
 ],
