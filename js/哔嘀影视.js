@@ -1,7 +1,9 @@
 // 发布页 https://www.bdys.me/
 var rule = {
     title: '哔嘀影视',
-    host: 'https://www.bdys10.com',
+     host:'https://www.bdys.me',
+     hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = html.match(/可用网址：<a href=\'(.*)\'>点此进入/)[1];print("厂长跳转地址 =====> " + HOST)',
+
     // url: '/s/all/fypage?type=fyclass',
 	url: '/s/all/fypage?type=fyclassfyfilter',
 	filter_url:'&{{fl.area}}&{{fl.year}}&{{fl.by}}',
