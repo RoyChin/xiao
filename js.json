@@ -14,7 +14,8 @@
 {"key": "追剧","name": "弹幕 | 追剧[jar]","type": 3,"api": "csp_TTian","playerType": 1,"ext": "http://app.kzjtv.com$$$null$$$1"},
 {"key":"NanGua","name":"弹幕 | 南瓜[jar]","type":3,"api":"csp_NanGua","searchable":1,"changeable":1,"ext":"null$$$1"},
 {"key":"Wogg","name":"弹幕 | 玩偶[jar]","type":3,"api":"csp_Wogg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$https://www.wogg.xyz/$$$null$$$1$$$./wogg.json"},
-{"key":"哔嘀影视","name":"哔嘀影视[jar]","type":3,"api":"csp_WebYJ","searchable":0,"changeable":1,"jar": "https://d.kstore.space/download/6474/tvbox/jar/YSZYZ.jar"},
+
+{"key":"哔嘀影视","name":"哔嘀影视[jar]","type":3,"api":"csp_WebYJ","searchable":0,"quickSearch":0,"filterable":0,"playerType":2,"jar": "https://d.kstore.space/download/6474/tvbox/jar/YSZYZ.jar"},
 {"key":"Wobg","name":"弹幕 | 表哥[jar]","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$https://wobge.run.goorm.io$$$null$$$1$$$./wogg.json"},
 {"key":"yydsys","name":"弹幕 | 老哥[jar]","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$https://tv.yydsys.top/$$$null$$$1$$$./wogg.json"},
 {"key":"Xinshijue","name":"弹幕 | 新视觉[jar]","type":3,"api":"csp_Xinshijue","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$https://www.80yy3.com/$$$1$$$./lib/wogg.json"},
