@@ -13,7 +13,7 @@ var rule = {
     class_url: 'all?type=0&all?type=1&donghua?type=1&guoju&gangtaiju&meiju&hanju',
     searchUrl: '/search/**/fypage',
     searchable: 2,//是否启用全局搜索,
-    quickSearch: 0,//是否启用快速搜索,
+    //quickSearch: 0,//是否启用快速搜索,
     headers: {
         'User-Agent': 'MOBILE_UA',
     },
