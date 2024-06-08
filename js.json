@@ -8,7 +8,6 @@
 {"key":"drpy_js_荐片","name":"影视 | 荐片[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./js/荐片.js", "timeout":30},
 
 {"key":"drpy_js_HDmoli","name":"影视 | HDmoli[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/HDmoli.js"},
-{"key":"drpy_js_爱看","name":"影视 | 爱看[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/爱看.js"},
 {"key":"drpy_js_低端","name":"影视 | 低端[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/低端.js"},
 {"key":"drpy_js_南瓜影视","name":"影视 | 南瓜影视[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/南瓜影视.js"},
 {"key":"drpy_js_Auete","name":"影视 | Auete影视[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/Auete影视.js"},
@@ -19,7 +18,6 @@
 {"key":"drpy_js_农民","name":"影视 | 农民影视[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/农民影视.js"},
 {"key":"drpy_js_在线之家","name":"影视 | 在线之家[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/在线之家.js"},
 {"key":"drpy_js_量子资源","name":"影视 | 量子资源[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/量子资源.js"},
-{"key":"drpy_js_热播库","name":"影视 | 热播库[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/热播库.js"},
 {"key":"drpy_js_蛋蛋剧","name":"影视 | 蛋蛋剧[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/蛋蛋剧.js"},
 {"key":"drpy_js_B站影视","name":"影视 | B站影视[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_凌云影视","name":"影视 | 凌云影视[js]","type":3,"api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js","ext":"./js/凌云影视.js"},
