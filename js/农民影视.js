@@ -1,25 +1,46 @@
-// 发布页 https://www.nmdvd.com/
 var rule = {
-    title: '农民影视[优]',
-    tab_rename: {'默认': '线路①', '播放': '线路①', '滴滴': '线路①'}, //host:'https://www.nmddd.com',
-    host: 'https://www.nmdvd.com/',
-    hostJs: `print(HOST);let html=request(HOST,{headers:{"User-Agent":MOBILE_UA}});
-	let src = jsp.pdfh(html,"body&&a:eq(1)&&href")||jsp.pdfh(html,"body&&a:eq(1)&&Text");
-	if(!src.startsWith('http')){src='https://'+src};print("抓到主页:"+src);HOST=src`,
-    url: '/vod-list-id-fyfilter.html', // /vod-list-id-2-pg-1-order--by-time-class-0-year-2023-letter--area--lang-.html
-    filterable: 1,//是否启用分类筛选,
+    author: '小可乐/240527/第一版',
+    title: '爱看农民[优]',
+    host: 'https://m.emsdn.cn',
+    hostJs: $js.toString(() => {
+        print(HOST);
+        let html = request(HOST, {headers: {"User-Agent": PC_UA}});
+        let src = jsp.pdfh(html, "body&&a:eq(0)&&href") || jsp.pdfh(html, "body&&a:eq(0)&&Text");
+        if (src && src.length > 5) {
+            print(src);
+            if (!src.startsWith('http')) {
+                src = 'https://' + src
+            }
+            print("抓到主页:" + src);
+            HOST = src
+        }
+    }),
+    headers: {'User-Agent': 'PC_UA'},
+    编码: 'utf-8',
+    timeout: 5000,
+    homeUrl: '/',
+    url: '/vod-list-id-fyfilter.html',
     filter_url: '{{fl.cateId}}-pg-fypage-order--by-{{fl.by or "time"}}-class-0-year-{{fl.year}}-letter-{{fl.letter}}-area-{{fl.area}}-lang-',
-    filter: 'H4sIAAAAAAAAA+2Z304TQRyF32WvuZjZtjNT3sBnMFxUbCJRMQE0IYRELQgtCmqkFSz+iZaWiFICIbIIfZnulr6FW7o756CJMeFKMnf9ndOdnW9osl+WOU96ozfnvLvFWW/UGy/MFG/c9ka8ycL9Yjz39k/C9yvx/Khw72Hx4ouTcRwutvql1iCOB+nNjyRxpdU9rffKS0mTQ1Oth+UmGmWb3vJ+VFpEo9E0X4XHJ2iMbaInL6PHVTR53KfcvLSaFLho+W03KFOFfUelSvR0kypsL2wsXdqEjPc3NiiH51WYKhZwWmG9HT4P/n5aWPlLs7/xLEmTIe362xvRj72kSwZ73Vo7Oj5LrxsO9sjOVsN3p0mXDHbNDzvoksEeQK0R1XeTLhlsd9DGdclgu2o7rHwMtz6ltZ3tXXd2o63GeaPTDTbTe3NkqV60w2A7pRoOaXe+so8dJAN2t867W+cu3kq00omPNl3WznblRqe39q1X3kgXt3P6jW5noXdai6rpHwOzvcviUfi9lN5iOPBPZLZYmKKfyPFh9+TzP/5EfOFnkuziI+U+cp9ziVxyLpALymXe5jLPuUFuONfINecKueI8hzzHeRZ5lnPwSuaV4JXMK8ErmVeCVzKvAK9gXgFewbwCvIJ5BXgF8wrwCuYV4BXMK8ArmFeAVzCvAK9gXgFeAV6Zz6e8Fx8pN8gN5xq55lwhV5znkOc4zyLPcp5BnuHcR+5zLpFLzgVy5jXgNcxrwGuY14DXMK8Br2FeA17DvAa8hnkNeA3zGvAa5jXgNcxrwGuYV4NXM68Gr2ZeDV7NvBq8mnk1eDXzavBq5tXg1cyrwauZV4NXM68Gr2ZeBV7FvAq8inkVeBXzKvAq5lXgVcyrwKuYV4FXMa8Cr2JeBV7FvAq88Ud+fNyaxcMjWn0dBmt/PDyi2lG/dpgsMDMRf9U+vYIgar9JmjsTM9N48u0thMupfUyPP5gqDu46NuL5V7RB0MaP4m7QjI0sRUMV+8zAXA7aaYWzi+1jICe4Cscd7TYHToMq51zMuZhzMedizsWcizkXcy52zVwsQy7m7MbZjbMbZzfObpzdOLtxdvP/2032im+acDphpRX9/EovhsxvFf3/Lu/eGTmrclblrMpZlbMqZ1XOqq6ZVfnKvTRyeuP0xumN0xunN05vnN5cI72Z/wVNTNQhri4AAA==',
+    detailUrl: '',
+    searchUrl: '/vod-search-pg-fypage-wd-**.html',
+    searchable: 1,
+    quickSearch: 1,
+    filterable: 1,
+    class_name: '电影&剧集&综艺&动漫&短剧',
+    class_url: '1&2&3&4&26',
     filter_def: {
-        1: {cateId: '1'}, 2: {cateId: '2'}, 3: {cateId: '3'}, 4: {cateId: '4'}, 26: {cateId: '26'}
+        1: {cateId: '1'},
+        2: {cateId: '2'},
+        3: {cateId: '3'},
+        4: {cateId: '4'},
+        26: {cateId: '26'}
     },
-    searchUrl: '/index.php?m=vod-search&wd=**',
-    searchable: 2,//是否启用全局搜索,
-    headers: {//网站的请求头,完整支持所有的,常带ua和cookies
-        'User-Agent': 'MOBILE_UA',
-    }, // class_parse: '#topnav li:lt(4);a&&Text;a&&href;.*/(.*?).html',
-    class_name: '电影&连续剧&综艺&动漫&短剧',//静态分类名称拼接
-    class_url: '1&2&3&4&26',//静态分类标识拼接
+    tab_rename: {
+        '播放列表1：（默认）': '默认',
+        '播放列表1：（云播①）': '云播①',
+        '播放列表1：（云播③）': '云播③',
+        '播放列表2：（百度网盘）': '百度网盘'
+    },
     play_parse: true,
     lazy: $js.toString(() => {
         let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
@@ -30,16 +51,21 @@ var rule = {
             parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
         }
     }),
-    limit: 6,
-    推荐: '.globalPicList li:has(img);a&&title;*;*;*',
-    一级: '.globalPicList li;.sTit&&Text;img&&src;.sBottom--em&&Text;a&&href',
+    limit: 12,
+    double: false,
+    推荐: 'ul.list_06:has(li) li;*;*;*;*',
+    一级: 'ul.list_01 li;a:eq(0)&&title;img&&src;font&&Text;a:eq(0)&&href',
     二级: {
-        "title": ".title&&Text;.type-title&&Text",
-        "img": ".page-hd&&img&&src",
-        "desc": ".desc_item:eq(3)&&Text;.desc_item:eq(4)--span&&Text;;.desc_item:eq(1)--span&&Text;.desc_item:eq(2)--span&&Text",
-        "content": ".detail-con p&&Text",
-        "tabs": ".hd",
-        "lists": ".numList:eq(#id) li"
+        "title": ".fen&&h1&&Text;.d_z_y:eq(2)&&font&&Text",
+        "img": ".lef:eq(-1)&&img&&src",
+        "desc": ".d_z_y:eq(-3)&&Text;.d_z_y:eq(-2)&&font&&Text;;.d_z_y:eq(1)&&font&&Text;.d_z_y:eq(0)&&font&&Text",
+        "content": ".jjie&&Text",
+        "tabs": "h2 span",
+        "tab_text": "body&&Text",
+        "lists": ".soyurl:eq(#id)&&a",
+        "list_text": "body&&Text",
+        "list_url": "a&&href"
     },
-    搜索: '.ulPicTxt.clearfix li;*;img&&data-src;.sDes:eq(1)&&Text;*',
+    搜索: '*',
+    filter: 'H4sIAAAAAAAAA+2YW08TQRTH3/sx9rkPMy0tLW/c7/c7hIeKm0hETKCaEEKiFoQWATXSChYviaUlgpRgiBShX6Y7pd/CrZw959QHQ4K8zVvP79+dmf90dv9nu+AypFEz7lowHprzRo0xGQqbrfcNtzETemTadfH43Pq4ZtdPQ9NPbDC+YMzY2FrOlCKZMrYLaSy6AccyhYtkMboCio+UeNKKpknxo1JcPVaRZVKqSUm/sc7OSQmgop6/Vs/ipARpnmi6YjQp6KLV94VclEm0bhWJqRc7TKLlWamVikVIe30Ti27csNCsGaLtspJZ61Xu39tFQ39Nl7ZfAoXC0Up72+rnEWhQ4HWbWXV26Vx3XeCeXW5YHy5AgwLH/LRPGhS4A4mUSh6ABgVqJ1m6DgrU4lkr9tna/eLIWOOs+wdqN3WVyhdyO87cHKGr9ayV23NcXReOdrV2TCuAgla3xVe3xTV7KWotb2+tMyzWOHIqX9w8LEa3ncGxdr5RyC8VLxIq7vwYVOMsy6fW94gzxXVRcUbmzdAsnRGVOC0lftzwjHiEpwrYn4+Me4l7OfcQ93AuiUvOBXHBuAwil0HOA8QDnFcTr+bcT9zPuY+4j3PyK7lfSX4l9yvJr+R+JfmV3K8kv5L7FeRXcL+C/AruV5Bfwf0K8iu4X0F+BfcryK/gfgX5FdyvIL+C+xXkV3C/gvzaHyvO5bQZDpvsZFqHCXW0fsOTWQugFkkdkDok9UDqkTQAaUDSCKQRSROQJiTNQJqRtABpQdIKpBVJG5A2JO1A2pF0AOlA0gmkE0kXkC4k3UC6kfQA6UHSC6QXSR+QPiT9QPqRDAAZQDIIZBDJEJAhJMNAhpGMABlBMgpkFMkYkLHKU3Fvnj2rNt5auc0bngh6sNlFeMoeAJ+huZzKvgPlwVR4jp6/R0vWqpOBc5OPZ83yYlwTbpfhuW1fQneHnQmFXNruDZwQJ8kO1nKEnmQdycv8pMopSVfR7akO0uVwJcmnuwLdFeiuQHcFuivQXYHuCu6uK/DyrkDHrI5ZHbM6ZnXM6pg1dMz+x5ituu3LN91NViyjfn1j78qBvyT253pQv0brfNf5rvNd57vOd53vd/jnul+/R+uc1Tmrc1bnrKFzVufsXeSsa/E37iRyfV8nAAA='
 }
