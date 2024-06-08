@@ -27,7 +27,7 @@ var rule = {
         'Cookie': 'ssea2_search=ok'
 	},
 	class_parse: '.mr-auto li:gt(0):lt(6);a&&Text;a&&href;/(\\w+)/index.html',
-    tab_exclude:'云播F线',
+    tab_remove:'云播F线',
 	play_parse: true,
 	lazy:'',
 	limit: 6,
