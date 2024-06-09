@@ -19,7 +19,7 @@ var rule={
         lianxuju:{cateId:'lianxuju'},
         zongyi:{cateId:'zongyi'},
         hanguodianying:{cateId:'hanguodianying'},
-        dongman:{cateId:'dongman'},
+        dongman:{cateId:'dongman'}
         //jilu:{cateId:'jilu'}
     },
     // searchUrl:'/vsearch/-------------.html?wd=**&submit=',
