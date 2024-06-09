@@ -28,7 +28,7 @@ var rule={
     quickSearch:0,
     headers:{ 'User-Agent':'MOBILE_UA', },
     // class_parse: '.top_nav li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
-    class_parse: '.nav_list li:gt(0):lt(5);a&&title;a&&href;.*/(.*?).html',
+    class_parse: '.nav_list li:gt(0):lt(6);a&&title;a&&href;.*/(.*?).html',
     tab_remove:['VIP线路','app专用'], // VIP线路 需登录会员
     play_parse:true,
     lazy:`js:
