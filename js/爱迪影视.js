@@ -28,12 +28,13 @@ var rule={
     quickSearch:0,
     headers:{ 'User-Agent':'MOBILE_UA', },
     // class_parse: '.top_nav li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
-    class_parse: '.nav_list li:gt(0):lt(7);a&&title;a&&href;.*/(.*?).html',
-    tab_remove:['VIP线路'], // VIP线路 需登录会员
+    class_parse: '.nav_list li:gt(0):lt(5);a&&title;a&&href;.*/(.*?).html',
+    tab_remove:['VIP线路','app专用'], // VIP线路 需登录会员
     play_parse:true,
     lazy:`js:
         var url = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]).url;
-        url.indexOf('http') == -1 ? input = request('https://aidi.tv/addons/dplayer/?url=' + url, {}).match(/vodurl = '(.*?)'/)[1] : input = url
+        url.indexOf('http') == -1 ? input = request('https://adys.tv/player/?url=' + url, {}).match(/url":.*?['"](.*?)['"]/)[1] :input = url
+
     `,
     推荐:'*',
     // 一级:'.vodlist.vodlist_wi li;a&&title;.lazyload&&data-original;.pic_text&&Text;a&&href',
