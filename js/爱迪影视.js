@@ -20,7 +20,7 @@ var rule={
         zongyi:{cateId:'zongyi'},
         hanguodianying:{cateId:'hanguodianying'},
         dongman:{cateId:'dongman'},
-        jilu:{cateId:'jilu'}
+        //jilu:{cateId:'jilu'}
     },
     // searchUrl:'/vsearch/-------------.html?wd=**&submit=',
     searchUrl:'/vsearch/**----------fypage---.html',
@@ -50,5 +50,5 @@ var rule={
         "tabs":".play_source_tab--i&&a",
         "lists":".content_playlist.list_scroll:eq(#id) li"
     },
-    搜索:'.vodlist.clearfix li;*;*;*;*',
+    搜索:'.vodlist.clearfix li.vodlist_item;*;*;*;*',
 }
