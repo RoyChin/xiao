@@ -10,7 +10,8 @@ var rule = {
   headers: {
     'User-Agent': 'IOS_UA',
   },
-  class_parse: 'ul.stui-header__menu li:gt(0):lt(5);a&&Text;a&&href;.*/(\\d+).html',
+  class_parse: 'ul.stui-header__menu li:gt(0):lt(6);a&&Text;a&&href;.*/(\\d+).html',
+  cate_exclude: '伦理',
   play_parse: true,
   lazy: '',
   limit: 6,
