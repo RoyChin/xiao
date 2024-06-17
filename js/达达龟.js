@@ -15,6 +15,7 @@ var rule = {
     },
     searchUrl: '/vodsearch/**----------fypage---.html',
     class_parse: '.stui-header__menu li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
+    tab_remove:['高速云播2','无尽云播'],
     lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
@@ -34,5 +35,5 @@ var rule = {
         }
     `,
     // 搜索: muban.首图2.搜索1,
-    搜索: 'ul.stui-vodlist&&li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+    搜索: 'ul.stui-vodlist&&li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
 }

@@ -21,6 +21,7 @@ var rule={
     },
     class_parse: '.navbar-nav&&li;a&&Text;a&&href;/(\\d+).html',
     play_parse:true,
+    tab_remove:['奇艺视频'],
     // lazy:'js:let purl=jsp.pdfh(request(input),"iframe&&src");input={jx:0,url:purl,parse:1}',
 	lazy:`js:
 		input = jsp.pdfh(request(input), "iframe&&src").split('url=')[1];

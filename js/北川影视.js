@@ -6,7 +6,7 @@ var rule = {
 	模板:'mxpro',
 	// host:'https://bczhuiju.com',
 	host:'https://www.bcyingshi.ink/fb',
-	hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(1)&&a&&href");print(src);HOST=src',
+	hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(2)&&a&&href");print(src);HOST=src',
 	// url:'/vodshow/fyclass--------fypage---/',
 	url: '/vodshow/fyclassfyfilter/',
 	filterable:1,//是否启用分类筛选,
@@ -19,6 +19,7 @@ var rule = {
 	},
 	searchUrl:'/vodsearch/page/fypage/wd/**/',
 	class_parse:'.navbar-items li:gt(1):lt(6);a&&Text;a&&href;.*/(.*?)/',
+    cate_exclude: '更新',
 	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
