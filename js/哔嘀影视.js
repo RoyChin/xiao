@@ -79,7 +79,7 @@ lazy:$js.toString(()=>{
     url = request(lines, {}).match(/url3":.*?['"](.*?)['"]/)[1];
 
     let splitUrl = url.indexOf(',') !== -1 ? url.split(',')[0].trim() : url.trim();
-    input = {parse: 0, url: splitUrl};
+    input = {parse: 0, url: splitUrl,jx:0};
 
 }),
 
