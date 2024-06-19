@@ -257,14 +257,14 @@ function pre() {
             //  直接操作 rule_fetch_params 这个变量 .headers.Cookie
             eval(code);
         } catch (e) {
-            console.log('预处理执行失败:' + e.message);
+            console.log(`预处理执行失败:${e.message}`);
         }
     }
 }
 
 let rule = {};
 let vercode = typeof (pdfl) === 'function' ? 'drpy2.1' : 'drpy2';
-const VERSION = vercode + ' 3.9.50beta26 20240605';
+const VERSION = vercode + ' 3.9.50beta31 20240617';
 /** 已知问题记录
  * 1.影魔的jinjia2引擎不支持 {{fl}}对象直接渲染 (有能力解决的话尽量解决下，支持对象直接渲染字符串转义,如果加了|safe就不转义)[影魔牛逼，最新的文件发现这问题已经解决了]
  * Array.prototype.append = Array.prototype.push; 这种js执行后有毛病,for in 循环列表会把属性给打印出来 (这个大毛病需要重点排除一下)
@@ -802,7 +802,7 @@ function Utf8ArrayToStr(array) {
  */
 function gzip(str) {
     let arr = pako.gzip(str, {
-        to: 'string'
+        // to: 'string'
     });
     return uint8ArrayToBase64(arr)
 }
@@ -1154,7 +1154,7 @@ function getQuery(url) {
         });
         return resObj;
     } catch (err) {
-        log('getQuery发生错误:' + e.message)
+        log(`getQuery发生错误:${e.message}`)
         return {};
     }
 }
@@ -1215,7 +1215,7 @@ function pdfh2(html, parse) {
             html2 = html.rr(html.ele).toString();
         }
     } catch (e) {
-        print('html对象转文本发生了错误:' + e.message);
+        print(`html对象转文本发生了错误:${e.message}`);
     }
     let result = defaultParser.pdfh(html2, parse);
     let option = parse.includes('&&') ? parse.split('&&').slice(-1)[0] : parse.split(' ').slice(-1)[0];
@@ -1243,7 +1243,7 @@ function pdfa2(html, parse) {
             html2 = html.rr(html.ele).toString();
         }
     } catch (e) {
-        print('html对象转文本发生了错误:' + e.message);
+        print(`html对象转文本发生了错误:${e.message}`);
     }
     return defaultParser.pdfa(html2, parse);
 }
@@ -1829,7 +1829,7 @@ function homeParse(homeObj) {
                     classes = input;
                 }
             } catch (e) {
-                log('通过js动态获取分类发生了错误:' + e.message);
+                log(`通过js动态获取分类发生了错误:${e.message}`);
             }
         } else {
             let p = homeObj.class_parse.split(';');
@@ -1843,7 +1843,7 @@ function homeParse(homeObj) {
             if (is_json) {
                 try {
                     let cms_cate_url = homeObj.MY_URL.replace('ac=detail', 'ac=list');
-                    let html = getHtml(cms_cate_url);
+                    let html = homeObj.home_html || getHtml(cms_cate_url);
                     if (html) {
                         if (cms_cate_url === homeObj.MY_URL) {
                             homeHtmlCache = html;
@@ -1858,7 +1858,7 @@ function homeParse(homeObj) {
                 }
             } else if (p.length >= 3 && !is_json) { // 可以不写正则
                 try {
-                    let html = getHtml(homeObj.MY_URL);
+                    let html = homeObj.home_html || getHtml(homeObj.MY_URL);
                     if (html) {
                         homeHtmlCache = html;
                         let list = _pdfa(html, p0);
@@ -1871,7 +1871,7 @@ function homeParse(homeObj) {
                                     }
                                     // let url = pdfh(it, p[2]);
                                     let url = _pd(it, p[2]);
-                                    if (p.length > 3 && p[3]) {
+                                    if (p.length > 3 && p[3] && !homeObj.home_html) {
                                         let exp = new RegExp(p[3]);
                                         url = url.match(exp)[1];
                                     }
@@ -2026,7 +2026,7 @@ function homeVodParse(homeVodObj) {
                             // print(vod);
                             d.push(vod);
                         } catch (e) {
-                            console.log('首页列表双层定位处理发生错误:' + e.message);
+                            console.log(`首页列表双层定位处理发生错误:${e.message}`);
                         }
 
                     }
@@ -2081,7 +2081,7 @@ function homeVodParse(homeVodObj) {
                         d.push(vod);
 
                     } catch (e) {
-                        console.log('首页列表单层定位处理发生错误:' + e.message);
+                        console.log(`首页列表单层定位处理发生错误:${e.message}`);
                     }
 
                 }
@@ -2175,7 +2175,7 @@ function categoryParse(cateObj) {
                     }
                 }
             } catch (e) {
-                print('合并不同分类对应的默认筛选出错:' + e.message);
+                print(`合并不同分类对应的默认筛选出错:${e.message}`);
             }
         }
         let new_url;
@@ -2467,7 +2467,7 @@ function searchParse(searchObj) {
 
             }
         } catch (e) {
-            print('搜索发生错误:' + e.message);
+            print(`搜索发生错误:${e.message}`);
             return '{}'
         }
     }
@@ -2696,13 +2696,13 @@ function detailParse(detailObj) {
                             try {
                                 LISTS[i] = LISTS[i].map(it => it.split('$').slice(0, 2).join('$'));
                             } catch (e) {
-                                print('格式化LISTS发生错误:' + e.message);
+                                print(`格式化LISTS发生错误:${e.message}`);
                             }
                         }
                     }
                     vod_play_url = LISTS.map(it => it.join('#')).join(vod_play_url);
                 } catch (e) {
-                    print('js执行lists: 发生错误:' + e.message);
+                    print(`js执行lists: 发生错误:${e.message}`);
                 }
 
             } else {
@@ -2893,12 +2893,12 @@ function playParse(playObj) {
             print('开始执行js免嗅=>' + lazy_code);
             eval(lazy_code);
             lazy_play = typeof (input) === 'object' ? input : {
-                parse: 1,
+                parse: SPECIAL_URL.test(input) || /^(push:)/.test(input) ? 0 : 1,
                 jx: tellIsJx(input),
                 url: input
             };
         } catch (e) {
-            print('js免嗅错误:' + e.message);
+            print(`js免嗅错误:${e.message}`);
             lazy_play = common_play;
         }
     } else {
@@ -2946,7 +2946,7 @@ function proxyParse(proxyObj) {
         log('准备执行本地代理规则:\n' + proxyObj.proxy_rule);
         try {
             eval(proxyObj.proxy_rule);
-            if (input && input !== proxyObj.params && Array.isArray(input) && input.length === 3) {
+            if (input && input !== proxyObj.params && Array.isArray(input) && input.length >= 3) {
                 return input
             } else {
                 return [404, 'text/plain', 'Not Found']
@@ -2980,7 +2980,7 @@ function isVideoParse(isVideoObj) {
                 return false
             }
         } catch (e) {
-            log('执行嗅探规则发生错误:' + e.message);
+            log(`执行嗅探规则发生错误:${e.message}`);
             return false
         }
     }
@@ -3130,6 +3130,52 @@ function init(ext) {
                 // eval("(function(){'use strict';"+ext.replace('var rule', 'rule')+"})()");
                 eval("(function(){" + ext.replace('var rule', 'rule') + "})()");
             }
+        } else {
+            console.log(`规则加载失败,不支持的规则类型:${typeof ext}`);
+            return
+        }
+        rule.host = (rule.host || '').rstrip('/');
+        HOST = rule.host;
+        if (rule.hostJs) {
+            console.log(`检测到hostJs,准备执行...`);
+            try {
+                eval(rule.hostJs);
+                rule.host = HOST.rstrip('/');
+            } catch (e) {
+                console.log(`执行${rule.hostJs}获取host发生错误:${e.message}`);
+            }
+        }
+        if (rule['模板'] === '自动') {
+            try {
+                let host_headers = rule['headers'] || {};
+                let host_html = getCode(HOST, {headers: host_headers});
+                let match_muban = '';
+                let muban_keys = Object.keys(muban).filter(it => !/默认|短视2|采集1/.test(it));
+                for (let muban_key of muban_keys) {
+                    try {
+                        let host_data = JSON.parse(home({}, host_html, muban[muban_key].class_parse));
+                        if (host_data.class && host_data.class.length > 0) {
+                            match_muban = muban_key;
+                            console.log(`自动匹配模板:【${muban_key}】`);
+                            break;
+                        }
+                    } catch (e) {
+                        // @ts-ignore
+                        console.log(`自动匹配模板:【${muban_key}】错误:${e.message}`);
+                    }
+                }
+                if (match_muban) {
+                    muban['自动'] = muban[match_muban];
+                    if (rule['模板修改'] && rule['模板修改'].startsWith('js:')) {
+                        // 模板修改:$js.toString(()=>{ muban.自动.class_parse = ''});
+                        eval(rule['模板修改'].replace('js:', '').trim());
+                    }
+                } else {
+                    delete rule['模板']
+                }
+            } catch (e) {
+                delete rule['模板']
+            }
         }
         if (rule.模板 && muban.hasOwnProperty(rule.模板)) {
             print('继承模板:' + rule.模板);
@@ -3143,17 +3189,7 @@ function init(ext) {
 
         rule.cate_exclude = rule_cate_excludes.join('|');
         rule.tab_exclude = rule_tab_excludes.join('|');
-        rule.host = (rule.host || '').rstrip('/');
-        HOST = rule.host;
-        if (rule.hostJs) {
-            console.log(`检测到hostJs,准备执行...`);
-            try {
-                eval(rule.hostJs);
-                rule.host = HOST.rstrip('/');
-            } catch (e) {
-                console.log(`执行${rule.hostJs}获取host发生错误:` + e.message);
-            }
-        }
+
         rule.类型 = rule.类型 || '影视'; // 影视|听书|漫画|小说
         rule.url = rule.url || '';
         rule.double = rule.double || false;
@@ -3221,13 +3257,13 @@ function init(ext) {
                                 console.log(v);
                                 rule.headers[k] = v;
                             } catch (e) {
-                                console.log(`从${v}获取cookie发生错误:` + e.message);
+                                console.log(`从${v}获取cookie发生错误:${e.message}`);
                             }
                         }
                     }
                 }
             } catch (e) {
-                console.log('处理headers发生错误:' + e.message);
+                console.log(`处理headers发生错误:${e.message}`);
             }
         }
         // print(rule.headers);
@@ -3237,7 +3273,7 @@ function init(ext) {
         pre(); // 预处理
         init_test();
     } catch (e) {
-        console.log('init_test发生错误:' + e.message);
+        console.log(`init_test发生错误:${e.message}`);
     }
 }
 
@@ -3246,10 +3282,14 @@ let homeHtmlCache = undefined;
 /**
  * js源获取首页分类和筛选特定返回对象中的函数
  * @param filter 筛选条件字典对象
+ * @param home_html 指定了源码。无需内部再请求
+ * @param class_parse 自动匹配传入的模板的动态分类
  * @returns {string}
  */
-function home(filter) {
+function home(filter, home_html, class_parse) {
     console.log("home");
+    home_html = home_html || '';
+    class_parse = class_parse || '';
     if (typeof (rule.filter) === 'string' && rule.filter.trim().length > 0) {
         try {
             let filter_json = ungzip(rule.filter.trim());
@@ -3263,8 +3303,9 @@ function home(filter) {
         MY_URL: rule.homeUrl,
         class_name: rule.class_name || '',
         class_url: rule.class_url || '',
-        class_parse: rule.class_parse || '',
+        class_parse: class_parse || rule.class_parse || '',
         cate_exclude: rule.cate_exclude,
+        home_html: home_html,
     };
     return homeParse(homeObj);
 }
