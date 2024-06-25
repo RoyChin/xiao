@@ -54,7 +54,13 @@ var rule = {
 		"img": ".g-playicon&&img&&src",
 		"desc": ".s-top-info-title span&&Text;;;.item-type&&Text;.item-actor:eq(2)&&Text",
 		"content": ".ec-palytcji span&&Text",
-		"tabs": ".swiper-wrapper:eq(1) .channelname",
+			"tabs": `js:
+            TABS = [];
+			let tabs = pdfa(html, '.swiper-wrapper .channelname');
+			tabs.forEach((it) => {
+    TABS.push(pdfh(it, "body&&Text").replace(/\\s*\\([^)]*\\)/,'').replace('',''));
+});
+		`,
 		"lists": ".content_playlist:eq(#id) li"
 	},
 	搜索: '.pack-packcover.returl.list-top-b;*;*;*;*',

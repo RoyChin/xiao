@@ -15,7 +15,7 @@ var rule = {
     },
     searchUrl: '/vodsearch/**----------fypage---.html',
     class_parse: '.stui-header__menu li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
-    tab_remove:['高速云播2','无尽云播'],
+    tab_remove:['高速云播2','无尽云播','量子云播'],
     lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;

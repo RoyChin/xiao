@@ -16,6 +16,7 @@ var rule = {
 	searchUrl: '/index.php/rss/index.xml?wd=**',
 	class_parse: '.nav-list li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
 	cate_exclude:'少儿',
+    tab_remove:['LG源','LZ源'],
 	搜索:`js:
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];

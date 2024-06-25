@@ -20,6 +20,14 @@ var rule = {
 	searchUrl:'/vodsearch/page/fypage/wd/**/',
 	class_parse:'.navbar-items li:gt(1):lt(6);a&&Text;a&&href;.*/(.*?)/',
     cate_exclude: '更新',
+                二级: {
+                "title": "h1&&Text;.module-info-tag&&Text",
+                "img": ".lazyload&&data-original",
+                "desc": ".module-info-item:eq(1)&&Text;.module-info-item:eq(2)&&Text;.module-info-item:eq(3)&&Text",
+                "content": ".module-info-introduction&&Text",
+                "tabs": ".module-tab-item--small",
+                "lists": ".module-play-list:eq(#id) a"
+            },
 	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
