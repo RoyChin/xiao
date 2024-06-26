@@ -35,13 +35,24 @@ var rule = {
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		if (/\\.m3u8|\\.mp4/.test(url)) {
-			input = {
-				jx: 0,
-				url: url,
-				parse: 0
-			}
-		} else {
+if (/\\.m3u8/.test(url)) {
+            let body = request(url);
+            let lines = body.split('\\n');
+            let m3u8Url = null;
+            for (let line of lines) {
+                line = line.trim();
+                if (line.endsWith('.m3u8')) {
+                    m3u8Url = new URL(line, url).href;
+                    console.log(m3u8Url);
+                    break;
+                }
+            }
+            input = {
+                jx: 0,
+                url: m3u8Url || url,
+                parse: 0
+            };
+    } else {
 			input
 		}
 	`,
