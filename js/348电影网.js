@@ -68,9 +68,9 @@ if (/\\.m3u8/.test(url)) {
 		"content": ".ec-palytcji span&&Text",
 			"tabs": `js:
             TABS = [];
-			let tabs = pdfa(html, '.swiper-wrapper .channelname');
+			let tabs = pdfa(html.replace(/&nbsp;/g,''), '.swiper-wrapper .channelname');
 			tabs.forEach((it) => {
-    TABS.push(pdfh(it, "body&&Text").replace(/ /,'').replace(/\\s*\\([^)]*\\)/,'').replace(/[^\x00-\x7F]/,''));
+    TABS.push(pdfh(it, "body&&Text").replace(/\\s*\\([^)]*\\)/,'').replace(/[^\x00-\x7F]/,''));
 });
 		`,
 		"lists": ".content_playlist:eq(#id) li"
