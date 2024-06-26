@@ -71,7 +71,7 @@ if (/\\.m3u8/.test(url)) {
 			let tabs = pdfa(html, '.swiper-wrapper .channelname');
 			tabs.forEach((it) => {
     TABS.push(pdfh(it, "body&&Text").replace(/\\s*\\([^)]*\\)/,'').replace('','').replace(' ',''));
-}); 
+});
 		`,
 		"lists": ".content_playlist:eq(#id) li"
 	},
