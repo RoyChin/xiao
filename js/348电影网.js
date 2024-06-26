@@ -27,6 +27,7 @@ var rule = {
 	},
 	class_parse: '.nav-channel a;a&&Text;a&&href;/(\\d+).html',
 	play_parse: true,
+    tab_remove:['蓝光Z','极速','极速2'],
 	lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
@@ -69,8 +70,8 @@ if (/\\.m3u8/.test(url)) {
             TABS = [];
 			let tabs = pdfa(html, '.swiper-wrapper .channelname');
 			tabs.forEach((it) => {
-    TABS.push(pdfh(it, "body&&Text").replace(/\\s*\\([^)]*\\)/,'').replace('',''));
-});
+    TABS.push(pdfh(it, "body&&Text").replace(/\\s*\\([^)]*\\)/,'').replace('','').replace(' ',''));
+}); 
 		`,
 		"lists": ".content_playlist:eq(#id) li"
 	},
