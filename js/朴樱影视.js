@@ -24,6 +24,7 @@ var rule = {
 		4:{cateId:'4'},
 		36:{cateId:'36'}
 	},
+    tab_remove:['L线路','禁国内IP线路'],
 	headers: {
 		'User-Agent': 'PC_UA',
 	},
