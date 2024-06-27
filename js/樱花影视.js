@@ -11,14 +11,33 @@ var rule = {
   },
   class_parse: 'nav.nav li:gt(0):lt(4);a&&Text;a&&href;.*/(.*)/',
   play_parse: true,
+  tab_remove:['优酷视频','腾讯视频'],
   lazy: $js.toString(() => {
         var url = JSON.parse(request(input).match(/_player = (.*?);</)[1]).url;
         //console.log(url);
-        input = {
-                jx: 0,
-                url: url,
-                parse: 0
+     if (/\.m3u8/.test(url)) {
+    //console.log(url);
+            let body = request(url);
+            let lines = body.split('\n');
+            let m3u8Url = null;
+            for (let line of lines) {
+                line = line.trim();
+                if (line.endsWith('.m3u8')) {
+                    m3u8Url = new URL(line, url).href;
+                    console.log(m3u8Url);
+                    break;
+                }
             }
+            input = {
+                jx: 0,
+                url: m3u8Url || url,
+                parse: 0
+            };
+    } else {
+			input
+		}
+
+
 
     }),
   limit: 6,
