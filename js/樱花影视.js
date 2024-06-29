@@ -1,5 +1,5 @@
 var rule = {
-  title: '映画影视',
+  title: '樱花影视',
   host: 'https://www.mayadc.com',
   url: '/vodlist/fyclass_____addtime_fypage.html',
   searchUrl: '/search/**-.html',
@@ -16,29 +16,31 @@ var rule = {
         var url = JSON.parse(request(input).match(/_player = (.*?);</)[1]).url;
         //console.log(url);
      if (/\.m3u8/.test(url)) {
-    //console.log(url);
-            let body = request(url);
-            let lines = body.split('\n');
-            let m3u8Url = null;
-            for (let line of lines) {
-                line = line.trim();
-                if (line.endsWith('.m3u8')) {
-                    m3u8Url = new URL(line, url).href;
-                    console.log(m3u8Url);
-                    break;
-                }
-            }
-            input = {
+    let m3u8 = request(url);
+    //log('m3u8处理前:' + m3u8);
+    m3u8 = m3u8.trim().split('\n').map(it => it.startsWith('#') ? it : urljoin(url, it)).join('\n');
+    //log('m3u8处理后:============:' + m3u8);
+    // 获取嵌套m3u8地址
+    let last_url = m3u8.split('\n').slice(-1)[0];
+    if (last_url.includes('.m3u8') && last_url !== url) {
+        input = {
                 jx: 0,
-                url: m3u8Url || url,
+                url: last_url,
                 parse: 0
-            };
+            }        
+    }else {
+        input = {
+                jx: 0,
+                url: last_url,
+                parse: 0
+            }}
     } else {
-			input
+        input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
 		}
-
-
-
     }),
   limit: 6,
   推荐: 'div.layout-box;li.w8;h3&&Text;.vod-image img&&src;.sname&&Text;a&&href',
