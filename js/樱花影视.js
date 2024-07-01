@@ -54,5 +54,5 @@ var rule = {
     tabs: 'ul#Tab.vod-player li',
     lists: '.fade-in:eq(#id) li',
   },
-  搜索: '.search-vod-list .w100;h3&&Text;.lazyload&&data-original;.txt-hidden&&Text;a&&href;.search-infos&&Text',
+  搜索: '.search-vod-list .w100;.lazyload&&title;.lazyload&&data-original;.txt-hidden&&Text;a&&href;.search-infos&&Text',
 }
