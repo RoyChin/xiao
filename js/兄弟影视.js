@@ -13,7 +13,17 @@ var rule = {
   class_parse: '.navbar-items&&li;a&&title;a&&href;.*/(\\d+)/',
   tab_exclude:'排序',
   play_parse: true,
-  lazy: '',
+lazy: `js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if((/m3u8|mp4/.test(url))&&!url.includes('xdad.m3u8')){input=url}else{input}`,
+     sniffer:1,
+
+     isVideo:`js:
+    log(input);
+    }if((/m3u8|mp4/.test(input))&&!input.includes('xdad.m3u8')){
+    input = true
+    }else{
+    input = false
+    }
+    `
   limit: 6,
   推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
   double: true,
