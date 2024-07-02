@@ -23,7 +23,7 @@ lazy: `js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);va
     }else{
     input = false
     }
-    `
+    `,
   limit: 6,
   推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
   double: true,
