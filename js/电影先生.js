@@ -1,7 +1,7 @@
 var rule = {
     模板: 'mxpro',
     title: '电影先生',
-    host: 'https://电影先生.com',
+    host: 'https://xn--44qz85a01qpc.com',
     url: '/pianku-fyclass--------fypage---.html',
     searchUrl: '/search-**----------fypage---.html',
     tab_exclude: '排序',
