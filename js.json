@@ -25,6 +25,7 @@
 {"key":"drpy_js_低端","name":"低端","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/低端.js"},
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
 {"key":"drpy_js_电影先生","name":"电影先生","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/电影先生.js"},
+{"key":"drpy_js_短剧TV网","name":"短剧TV网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/短剧TV网.js"},
 {"key":"drpy_js_干饭影视","name":"干饭影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/干饭影视.js"},
 {"key":"drpy_js_冠建影视","name":"冠建影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/冠建影视.js"},
 {"key":"drpy_js_哈皮影视[优]","name":"哈皮影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/哈皮影视[优].js"},
