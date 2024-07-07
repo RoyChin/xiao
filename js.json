@@ -5,7 +5,6 @@
 ],
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "sites":[
-{"key":"drpy_js_18哈","name":"18哈","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/18哈.js"},
 {"key":"drpy_js_348电影网","name":"348电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/348电影网.js"},
 {"key":"drpy_js_4k剧院","name":"4k剧院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/4k剧院.js"},
 {"key":"drpy_js_539影视","name":"539影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/539影视.js"},
