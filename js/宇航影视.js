@@ -8,7 +8,7 @@ var rule = {
     搜索: '.module-items .module-search-item;.video-serial&&title;img&&data-src;.video-serial&&Text;.video-serial&&href',
     推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
-    tab_remove:['WJ-良'],
+    tab_remove:['WJ-良','YK'],
     一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
     二级: {
     "title": "h1&&Text;.tag-link&&Text",
