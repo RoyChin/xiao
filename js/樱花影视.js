@@ -11,7 +11,7 @@ var rule = {
   },
   class_parse: 'nav.nav li:gt(0):lt(4);a&&Text;a&&href;.*/(.*)/',
   play_parse: true,
-  tab_remove:['优酷视频','腾讯视频'],
+  tab_remove:['优酷视频','腾讯视频','奇艺视频'],
   lazy: $js.toString(() => {
         var url = JSON.parse(request(input).match(/_player = (.*?);</)[1]).url;
         //console.log(url);
