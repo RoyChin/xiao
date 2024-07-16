@@ -15,6 +15,8 @@
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
 {"key":"drpy_js_爱迪影视","name":"爱迪影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱迪影视.js"},
 {"key":"drpy_js_爱看影院","name":"爱看影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱看影院.js"},
+{"key":"drpy_js_爱优影视[自动]","name":"爱优影视[自动]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱优影视[自动].js"},
+{"key":"drpy_js_宝片视频","name":"宝片视频","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宝片视频.js"},
 {"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
 {"key":"drpy_js_哔嘀影视","name":"哔嘀影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/哔嘀影视.js"},
 {"key":"drpy_js_厂长资源","name":"厂长资源","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/厂长资源.js"},
@@ -58,7 +60,6 @@
 {"key":"drpy_js_宇航影视","name":"宇航影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宇航影视.js"},
 {"key":"drpy_js_在线之家","name":"在线之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/在线之家.js"},
 {"key":"drpy_js_孜然影视","name":"孜然影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/孜然影视.js"},
-
 
 {"key":"push_agent","name":"手机 | 推送[jar]","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"ext":"http://127.0.0.1:9978/file/TV/token.json", "timeout":30},
 {"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext": "./json/market.json"}
