@@ -68,4 +68,3 @@ var rule = {
     // 搜索:'.movie-list-body&&.vod-search-list;*;*;.getop&&Text;*',
 	搜索:'json:list;name;pic;;id',
 }
-log(gzip(JSON.stringify(rule.filter))) 
