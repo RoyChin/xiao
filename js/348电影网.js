@@ -21,7 +21,7 @@ var rule = {
 	class_parse: '.nav-channel a;a&&Text;a&&href;/(\\d+).html',
 	play_parse: true,
     tab_remove:['蓝光Z','极速','极速2'],
-	lazy: `js:
+	lazy: $js.toString(() => {
 		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
 		if (html.encrypt == '1') {
@@ -48,12 +48,12 @@ if (/\\.m3u8/.test(url)) {
             };
     } else {
 			input = {
-                jx: 0,
+                jx: tellIsJx(url),
                 url: url,
                 parse: 0
             };
 		}
-	`,
+	}),
 	limit: 6,
 	double: true, // 推荐内容是否双层定位
 	推荐: '.vodlist;*;*;*;*;*',
