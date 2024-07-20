@@ -29,7 +29,7 @@ var rule = {
         }
     },
     headers: {
-        'User-Agent': 'MOBILE_UA',
+        'User-Agent': 'PC_UA',
     },
     timeout: 5000,
     class_parse: '.top_nav&&li;a&&Text;a&&href;/(\\w+).html',
@@ -38,8 +38,11 @@ var rule = {
 	lazy: $js.toString(() => {
 		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
-        url = decodeURIComponent(url);
-	
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
 if (/\\.m3u8/.test(url)) {
             let body = request(url);
             let lines = body.split('\\n');
