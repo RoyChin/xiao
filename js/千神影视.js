@@ -38,11 +38,8 @@ var rule = {
 	lazy: $js.toString(() => {
 		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
+        url = decodeURIComponent(url);
+	
 if (/\\.m3u8/.test(url)) {
             let body = request(url);
             let lines = body.split('\\n');
