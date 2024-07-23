@@ -28,7 +28,7 @@ var rule = {
     headers: {
         'User-Agent': 'PC_UA',
     },
-    timeout: 5000,
+    timeout: 10000,
     class_parse: '.top_nav&&li:lt(7);a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
     play_parse: true,
