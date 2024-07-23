@@ -38,7 +38,7 @@ var rule = {
         html = html.match(/r player_.*?=(.*?)</)[1];
         log(html.slice(0,500));
         html = JSON.parse(html);
-        log(html.slice(0,500));
+        log(html);
         
         //let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
