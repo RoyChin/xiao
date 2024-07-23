@@ -23,16 +23,13 @@ var rule = {
         },
         "24": {
             "类型": "24"
-        },
-        "46": {
-            "类型": "46"
         }
     },
     headers: {
         'User-Agent': 'PC_UA',
     },
     timeout: 5000,
-    class_parse: '.top_nav&&li;a&&Text;a&&href;/(\\w+).html',
+    class_parse: '.top_nav&&li:lt(7);a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
     play_parse: true,
 	lazy: $js.toString(() => {
