@@ -28,19 +28,19 @@ var rule = {
     headers: {
         'User-Agent': 'PC_UA',
     },
-    timeout: 20000,
+    timeout: 10000,
     class_parse: '.top_nav&&li:lt(7);a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
     play_parse: true,
 	lazy: $js.toString(() => {
-		let html  = request(input);
-        log(html.slice(0,500));
-        html = html.match(/r player_.*?=(.*?)</)[1];
-        log(html.slice(0,500));
-        html = JSON.parse(html);
-        log(html);
+		//let html  = request(input);
+        //log(html.slice(0,500));
+        //html = html.match(/r player_.*?=(.*?)</)[1];
+        //log(html.slice(0,500));
+        //html = JSON.parse(html);
+        //log(html);
         
-        //let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
 		if (html.encrypt == '1') {
 			url = unescape(url)
