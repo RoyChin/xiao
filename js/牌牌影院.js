@@ -8,7 +8,7 @@ var rule = {
     searchable: 2,
     quickSearch: 0,
     headers: {
-        'User-Agent': 'MOBILE_UA',
+        'User-Agent': 'ISO_UA',
     },
     url: '/index.php/api/vod#type=fyclassfyfilter&page=fypage',
     detailUrl: '/voddetail/fyid.html',
