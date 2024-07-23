@@ -43,6 +43,7 @@
 {"key":"drpy_js_米爱影视","name":"米爱影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/米爱影视.js"},
 {"key":"drpy_js_南瓜影视","name":"南瓜影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/南瓜影视.js"},
 {"key":"drpy_js_农民影视","name":"农民影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/农民影视.js"},
+{"key":"drpy_js_牌牌影院","name":"牌牌影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/牌牌影院.js"},
 {"key":"drpy_js_朴樱影视","name":"朴樱影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/朴樱影视.js"},
 {"key":"drpy_js_千神影视","name":"千神影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/千神影视.js"},
 {"key":"drpy_js_热播之家","name":"热播之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热播之家.js"},
