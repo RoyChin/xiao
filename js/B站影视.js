@@ -15,12 +15,11 @@ var rule = {
     lazy: $js.toString(() => {
         let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         let url = html.url;
+        var from = html.from;
         if (html.encrypt == '1') {
             url = unescape(url)
-            
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
-            
         }
         if (/\.m3u8|\.mp4/.test(url)) {
             
@@ -29,7 +28,23 @@ var rule = {
                 url: url,
                 parse: 0
             }
-        } else {
+        }
+        if (url.includes('NBY-')) {
+            var MacPlayerConfig={};
+            eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
+            var jx = MacPlayerConfig.player_list[from].parse;
+            if (jx == '') {
+                jx = MacPlayerConfig.parse
+            };
+            if (jx.startsWith("/")) {
+                jx = HOST + jx;
+            }
+            input={jx:0,url:jx+url,parse:1,
+                header: JSON.stringify({
+                    'referer': input
+                })}
+        }
+         else {
              input = {
                 jx: tellIsJx(url),
                 url: url,
