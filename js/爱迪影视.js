@@ -25,11 +25,11 @@ var rule={
 	cate_exclude: '纪录',
     tab_remove:['VIP线路','app专用'], // VIP线路 需登录会员
     play_parse:true,
-    lazy:`js:
+    lazy: $js.toString(() => {
         var url = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]).url;
         url.indexOf('http') == -1 ? input = request('https://adys.tv/player/?url=' + url, {}).match(/url":.*?['"](.*?)['"]/)[1] :input = url
 
-    `,
+    }),
     推荐:'*',
     // 一级:'.vodlist.vodlist_wi li;a&&title;.lazyload&&data-original;.pic_text&&Text;a&&href',
     一级:'.vodlist.vodlist_wi li;a&&title;.lazyload&&data-background-image;.xszxj&&Text;a&&href',
