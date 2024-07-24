@@ -16,9 +16,9 @@ var rule = {
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-if (/\\.m3u8/.test(url)) {
+if (/\.m3u8/.test(url)) {
             let body = request(url);
-            let lines = body.split('\\n');
+            let lines = body.split('\n');
             let m3u8Url = null;
             for (let line of lines) {
                 line = line.trim();

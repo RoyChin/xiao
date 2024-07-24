@@ -22,7 +22,7 @@ var rule = {
             url = unescape(base64Decode(url))
             
         }
-        if (/\\.m3u8|\\.mp4/.test(url)) {
+        if (/\.m3u8|\.mp4/.test(url)) {
             
             input = {
                 jx: 0,

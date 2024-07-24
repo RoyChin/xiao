@@ -2,7 +2,7 @@ var rule = {
     类型: '影视',
     编码: 'gb18030',
     title: '天启影视',
-    host: 'https://www.tqys.cc/',
+    host: 'https://www.tqys.tv',
     url: 'fyfilter/indexfypage.html[fyfilter/]',
     searchUrl: '/search.asp?page=1&searchword=**&searchtype=-1',
     searchable: 2,
@@ -17,7 +17,7 @@ var rule = {
         4: {tag: 'zony'},
     },
     headers: {
-        'User-Agent': 'MOBILE_UA',
+        'User-Agent': 'PC_UA',
     },
     timeout: 5000,
     class_name: '电影&电视剧&动漫&综艺',
