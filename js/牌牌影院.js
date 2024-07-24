@@ -35,7 +35,7 @@ var rule = {
 		}
 if (/\\.m3u8/.test(url)) {
             let body = request(url);
-            let lines = body.split('\\n');
+            let lines = body.split('\n');
             let m3u8Url = null;
             for (let line of lines) {
                 line = line.trim();
