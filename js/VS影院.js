@@ -1,0 +1,28 @@
+var rule = {
+  title: 'VS影院',
+  host: 'https://www.nxgqmy.com',
+  url: '/ybsitp/fyclass-fypage.html',
+  searchUrl: '/ybsisc/**----------fypage---.html',
+  searchable: 2,
+  quickSearch: 0,
+  filterable: 0,
+  headers: {
+    'User-Agent': 'MOBILE_UA',
+  },
+  class_parse: 'ul.menu li:gt(0);a&&Text;a&&href;/.*/(\\d+).*',
+  play_parse: true,
+  lazy:muban.mxpro.lazy,
+  limit: 6,
+  double: true,
+  推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+  一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+  二级: {
+    title: 'h3&&Text;.myui-content__detail p.data:eq(3)&&Text',
+    img: '.myui-content__thumb .lazyload&&data-original',
+    desc: '.myui-content__detail p.otherbox&&Text;.year&&Text;.myui-content__detail p.data:eq(4)&&Text;.myui-content__detail p.data:eq(2)&&Text;.myui-content__detail p.data:eq(0)&&Text',
+    content: '.content&&Text',
+    tabs: '.myui-panel__head&&li',
+    lists: '.myui-content__list:eq(#id) li a.btn',
+  },
+  搜索: '*',
+}

@@ -13,6 +13,7 @@
 {"key":"drpy_js_HDmoli","name":"HDmoli","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/HDmoli.js"},
 {"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
+{"key":"drpy_js_VS影院","name":"VS影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/VS影院.js"},
 {"key":"drpy_js_爱迪影视","name":"爱迪影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱迪影视.js"},
 {"key":"drpy_js_爱看影院","name":"爱看影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱看影院.js"},
 {"key":"drpy_js_爱优影视[自动]","name":"爱优影视[自动]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱优影视[自动].js"},
