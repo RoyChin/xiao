@@ -32,39 +32,7 @@ var rule = {
     class_parse: '.top_nav&&li:lt(7);a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
     play_parse: true,
-	lazy: $js.toString(() => {
-        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-		let url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
-if (/\.m3u8/.test(url)) {
-            let body = request(url);
-            let lines = body.split('\n');
-            let m3u8Url = null;
-            for (let line of lines) {
-                line = line.trim();
-                if (line.endsWith('.m3u8')) {
-                    m3u8Url = urljoin(url,line);
-                    console.log(m3u8Url);
-                    break;
-                }
-            }
-            input = {
-                jx: 0,
-                url: m3u8Url || url,
-                parse: 0
-            };
-    } else {
-			input = {
-                jx: tellIsJx(url),
-                url: url,
-                parse: 0
-            };
-		}
-	}),
+	lazy:muban.mxpro.lazy,
     double: true,
     limit:20,
     推荐: '.vodlist_item;.vodlist_thumb;*;*;*;*',
@@ -75,7 +43,7 @@ if (/\.m3u8/.test(url)) {
         desc: 'content_detail&&li:eq(1)&&Text;.detail_list&&ul:eq(1)&&li&&a&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(1)&&Text;.detail_list&&ul:eq(1)&&li:eq(2)&&Text;.detail_list&&ul:eq(1)&&li:eq(3)&&Text',
         content: '.content_desc&&span&&Text',
         tabs: '.play_source_tab--i&&a',
-        lists: '.content_playlist:eq(#id)&&li'
+        lists: 'ul.list_scroll:eq(#id)&&li'
     },
     搜索: '*',
 }
