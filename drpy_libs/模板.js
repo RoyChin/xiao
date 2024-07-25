@@ -45,7 +45,8 @@ let common_lazy = $js.toString(() => {
         };
     } else {
         // @ts-ignore
-        input;
+        //input;
+		input = url && url.startsWith('http') ? url:input;
     }
 });
 // 默认嗅探播放

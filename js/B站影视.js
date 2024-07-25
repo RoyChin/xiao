@@ -15,7 +15,7 @@ var rule = {
     lazy: $js.toString(() => {
         let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         let url = html.url;
-        var from = html.from;
+        let from = html.from;
         if (html.encrypt == '1') {
             url = unescape(url)
         } else if (html.encrypt == '2') {
@@ -30,9 +30,9 @@ var rule = {
             }
         }
         if (url.includes('NBY-')) {
-            var MacPlayerConfig={};
+            let MacPlayerConfig={};
             eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
-            var jx = MacPlayerConfig.player_list[from].parse;
+            let jx = MacPlayerConfig.player_list[from].parse;
             if (jx == '') {
                 jx = MacPlayerConfig.parse
             };
