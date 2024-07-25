@@ -46,7 +46,7 @@ let common_lazy = $js.toString(() => {
     } else {
         // @ts-ignore
         //input;
-		input = url && url.startsWith('http') ? url:input;
+		input = url && url.startsWith('http') && tellIsJx(url) ? {parse:0,jx:1,url:url}:input;
     }
 });
 // 默认嗅探播放
