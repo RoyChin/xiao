@@ -14,6 +14,7 @@ var rule = {
   lazy:muban.mxpro.lazy,
   limit: 6,
   double: true,
+  tab_remove:['秒播'],
   推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
   一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
   二级: {
