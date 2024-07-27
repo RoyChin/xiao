@@ -1,7 +1,19 @@
 {
 //"spider":"./jar/pg.jar;md5;d253420b95d2b9e3ab8904a92218d6f6",
 "lives":[
-{"name":"fanmingming_IPTV6","type":0,"url":"https://raw.kkgithub.com/fanmingming/live/main/tv/m3u/index.m3u","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"},{"name":"ssili126_IPTV4","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u","playerType":1,"epg":"https://epg.112114.eu.org/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"}
+{
+	"name":"fanmingming_IPTV6","type":0,
+	"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+	"playerType":1,
+	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"
+	},
+{
+	"name":"kimwang1978","type":0,
+	"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.m3u",
+	"playerType":1,
+	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"}
 ],
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "sites":[
