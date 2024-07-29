@@ -15,6 +15,7 @@ var rule = {
     class_parse: '#nav-swiper&&.nav-swiper-slide;a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜',
     tab_order: ['超清', '蓝光', '极速蓝光'],
+    tab_remove:['4K(高峰不卡)'],
     play_parse: true,
     lazy: '',
     limit: 20,

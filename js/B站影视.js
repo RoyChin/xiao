@@ -12,46 +12,32 @@ var rule = {
     },
     class_parse: '.fixed-nav&&.flex:lt(4);li&&Text;li&&data-id;(\\d+)',
     play_parse:true,
-    lazy: $js.toString(() => {
-        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-        let url = html.url;
-        let from = html.from;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-        if (/\.m3u8|\.mp4/.test(url)) {
-            
-            input = {
-                jx: 0,
-                url: url,
-                parse: 0
-            }
-        }
-        if (url.includes('NBY-')) {
-            let MacPlayerConfig={};
-            eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
-            let jx = MacPlayerConfig.player_list[from].parse;
-            if (jx == '') {
-                jx = MacPlayerConfig.parse
-            };
-            if (jx.startsWith("/")) {
-                jx = HOST + jx;
-            }
+    lazy:  `js:
+  let html = request(input);
+  let hconf = html.match(/r player_.*?=(.*?)</)[1];
+  let json = JSON5.parse(hconf);
+  let url = json.url;
+  if (json.encrypt == '1') {
+    url = unescape(url);
+  } else if (json.encrypt == '2') {
+    url = unescape(base64Decode(url));
+  }
+  if (/\\.(m3u8|mp4|m4a|mp3)/.test(url)) {
+    input = {
+      parse: 0,
+      jx: 0,
+      url: url,
+    };
+  }
+  if (url.includes('NBY-')) {
+    let jx = 'https://json.uuys.cc/?url='
             input={jx:0,url:jx+url,parse:1,
                 header: JSON.stringify({
                     'referer': input
                 })}
-        }
-         else {
-             input = {
-                jx: tellIsJx(url),
-                url: url,
-                parse: 0
-            }
-        }
-}),
+        } else {
+    input = url && url.startsWith('http') && tellIsJx(url) ? {parse:0,jx:1,url:url}:input;
+  }`,
     limit:6,
     推荐:'*',
     // 推荐:'.movie-list-body&&.movie-list-item;.movie-title&&Text;.Lazy&&data-original;.movie-rating&&Text;a&&href',

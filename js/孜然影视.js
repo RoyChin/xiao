@@ -21,7 +21,7 @@ var rule = {
         img: '.vodlist_thumb&&data-original',
         desc: '.content_detail&&li:eq(1)&&Text',
         content: '.content_desc&&span&&Text',
-        tabs: '.play_source_tab&&a',
+        tabs: '.play_source_tab&&a--i',
         lists: '.content_playlist:eq(#id) li',
     },
     搜索: 'ul.vodlist&&li;*;*;*;*',
