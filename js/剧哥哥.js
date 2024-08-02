@@ -2,13 +2,13 @@ Object.assign(muban.mxpro.二级, {
     tab_text: 'div--small&&Text',
 });
 
-function verifyLogin() {
+function verifyLogin(url) {
     let cnt = 0;
     let cookie = '';
     let r = Math.random();
-    let yzm_url = 'https://www.jugege.top/index.php/verify/index.html';
+    let yzm_url = getHome(url) + '/index.php/verify/index.html';
     log(`验证码链接:${yzm_url}`);
-    let submit_url = 'https://www.jugege.top/index.php/ajax/verify_check';
+    let submit_url = getHome(url) + '/index.php/ajax/verify_check';
     log(`post登录链接:${submit_url}`);
     while (cnt < OCR_RETRY) {
         try {
@@ -44,7 +44,8 @@ globalThis.verifyLogin = verifyLogin;
 var rule = {
     模板: 'mxpro',
     title: '剧哥哥',//https://jugege.com/
-    host: 'https://www.jugege.top',
+    host: 'https://www.jugege.vip',//发布页
+    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(0)&&href");print(src);HOST=src',
     headers:{//网站的请求头,完整支持所有的,常带ua和cookies
         'User-Agent':'PC_UA',
     },
@@ -78,7 +79,7 @@ var rule = {
     一级二: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     一级: $js.toString(() => {
          let cookie = getItem(RULE_CK, '');
-        log('储存的cookie:' + cookie);
+        //log('储存的cookie:' + cookie);
         let ret = request(MY_URL, {
             headers: {
                 Referer: encodeUrl(MY_URL),
@@ -86,8 +87,8 @@ var rule = {
             }
         });
         if (/系统安全验证/.test(ret)) {
-            log(ret);
-            cookie = verifyLogin();
+            //log(ret);
+            cookie = verifyLogin(MY_URL);
             if (cookie) {
                 log(`本次成功过验证,cookie:${cookie}`);
                 setItem(RULE_CK, cookie);

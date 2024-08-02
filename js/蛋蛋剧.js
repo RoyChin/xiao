@@ -1,13 +1,13 @@
 // 地址发布页 https://www.dandanju.vip
 // 搜索安全验证 > 通过drpy_ocr验证码接口过验证OK
 
-function verifyLogin() {
+function verifyLogin(url) {
     let cnt = 0;
     let cookie = '';
     let r = Math.random();
-    let yzm_url = 'https://www.ddjhd.com/index.php/verify/index.html';
+    let yzm_url = getHome(url) + '/index.php/verify/index.html';
     log(`验证码链接:${yzm_url}`);
-    let submit_url = 'https://www.ddjhd.com/index.php/ajax/verify_check';
+    let submit_url = getHome(url) + '/index.php/ajax/verify_check';
     log(`post登录链接:${submit_url}`);
     while (cnt < OCR_RETRY) {
         try {
@@ -59,7 +59,7 @@ var rule = {
     timeout:5000,//网站的全局请求超时,默认是3000毫秒
     class_parse:'ul.swiper-wrapper&&li;a&&Text;a&&href;.*/(.*?).html',
     play_parse:true,
-        lazy: $js.toString(() => {
+    lazy: $js.toString(() => {
         let js = 'try{function requestApix(callback){$.post(\"api.php\",{vid:getQueryString(\"vid\")},function(result){callback(result.data.url);},\"json\");}requestApix(function(data){location.href=sign(data);})}catch(e){}location.href=document.querySelector(\"#playleft iframe\").src;';
         input = {
             parse: 1,
@@ -69,11 +69,12 @@ var rule = {
         };
     }),
     limit:6,
-    推荐:'.tab-content&&li;*;*;*;*',
+    推荐:'.tab-content&&li;.lazyload&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
     一级二:'.ewave-vodlist&&li;.lazyload&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
-	    一级: $js.toString(() => {
+	一级: $js.toString(() => {
          let cookie = getItem(RULE_CK, '');
-        log('储存的cookie:' + cookie);
+        //log('储存的cookie:' + cookie);
+        
         let ret = request(MY_URL, {
             headers: {
                 Referer: encodeUrl(MY_URL),
@@ -81,8 +82,8 @@ var rule = {
             }
         });
         if (/系统安全验证/.test(ret)) {
-            log(ret);
-            cookie = verifyLogin();
+            //log(ret);
+            cookie = verifyLogin(MY_URL);
             if (cookie) {
                 log(`本次成功过验证,cookie:${cookie}`);
                 setItem(RULE_CK, cookie);
