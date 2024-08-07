@@ -8,6 +8,7 @@ var rule = {
     filterable: 0,
     headers: {
         'User-Agent': 'PC_UA',
+        "Referer": "https://www.hdmoli.pro",
     },
     class_parse: '.myui-header__menu li;a&&Text;a&&href;index(\\d+)\.html',
     play_parse: true,
