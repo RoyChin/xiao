@@ -13,7 +13,7 @@ var rule = {
   class_parse: 'ul.stui-header__menu li:gt(0):lt(6);a&&Text;a&&href;.*/(\\d+).html',
   cate_exclude: '伦理',
   play_parse: true,
-  lazy: '',
+  lazy:muban.mxpro.lazy,
   limit: 6,
   推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
   double: true,

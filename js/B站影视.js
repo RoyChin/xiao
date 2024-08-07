@@ -45,9 +45,9 @@ var rule = {
     // 一级:'json:list;vod_name;vod_pic;vod_score;vod_id',
     二级访问前:'log(MY_URL);MY_URL=MY_URL.replace("/play/","/detail/").replace("/sid/1/nid/1","");log(MY_URL)',
     二级:{
-        "title":"h1&&title;.scroll-content&&Text",
+        "title":"h1&&title;.scroll-content a:eq(0)&&Text",
         "img":".poster&&img&&src",
-        "desc":";;;.starLink&&Text;.cr3:eq(0)&&Text",
+        "desc":";.scroll-content a:eq(1)&&Text;.scroll-content a:eq(2)&&Text;.starLink&&Text;.cr3:eq(0)&&Text",
         "content":".detailsTxt--div&&Text",
         "tabs":".swiper-wrapper&&a",
         "lists":".content_playlist:eq(#id)&&li"

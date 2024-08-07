@@ -1,5 +1,5 @@
 var rule = {
-  title: '',
+  title: 'HDmoli',
   host: 'https://www.hdmoli.pro',
   url: '/mlist/indexfyclass-fypage.html',
   searchUrl: '/search.php?page=fypage&searchword=**&searchtype=',
