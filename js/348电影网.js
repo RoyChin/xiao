@@ -21,7 +21,7 @@ var rule = {
 	class_parse: '.nav-channel a;a&&Text;a&&href;/(\\d+).html',
 	play_parse: true,
     tab_remove:['蓝光Z','极速2','蓝光HR1','蓝光-MY','高清-LS'],
-	lazy:muban.mxpro.lazy,
+	lazy:common_lazy,
 	limit: 6,
 	double: true, // 推荐内容是否双层定位
 	推荐: '.vodlist;*;*;*;*;*',
