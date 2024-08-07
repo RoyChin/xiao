@@ -20,40 +20,8 @@ var rule = {
 	},
 	class_parse: '.nav-channel a;a&&Text;a&&href;/(\\d+).html',
 	play_parse: true,
-    tab_remove:['蓝光Z','极速','极速2'],
-	lazy: $js.toString(() => {
-		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-		let url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
-if (/\.m3u8/.test(url)) {
-            let body = request(url);
-            let lines = body.split('\n');
-            let m3u8Url = null;
-            for (let line of lines) {
-                line = line.trim();
-                if (line.endsWith('.m3u8')) {
-                    m3u8Url = urljoin(url,line);
-                    console.log(m3u8Url);
-                    break;
-                }
-            }
-            input = {
-                jx: 0,
-                url: m3u8Url || url,
-                parse: 0
-            };
-    } else {
-			input = {
-                jx: tellIsJx(url),
-                url: url,
-                parse: 0
-            };
-		}
-	}),
+    tab_remove:['蓝光Z','极速2','蓝光HR1','蓝光-MY','高清-LS'],
+	lazy: common_lazy,
 	limit: 6,
 	double: true, // 推荐内容是否双层定位
 	推荐: '.vodlist;*;*;*;*;*',
