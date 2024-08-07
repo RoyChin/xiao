@@ -7,7 +7,7 @@ var rule = {
     quickSearch: 0,
     filterable: 0,
     headers: {
-        'User-Agent': 'MOBILE_UA',
+        'User-Agent': 'PC_UA',
     },
     class_parse: '.myui-header__menu li;a&&Text;a&&href;index(\\d+)\.html',
     play_parse: true,
