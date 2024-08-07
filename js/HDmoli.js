@@ -11,7 +11,15 @@ var rule = {
   },
   class_parse: '.myui-header__menu li;a&&Text;a&&href;index(\\d+)\.html',
   play_parse: true,
-  lazy: '',
+          lazy: $js.toString(() => {
+        let js = 'try{function requestApix(callback){$.post(\"ass.php\",{vid:getQueryString(\"vid\")},function(result){callback(result.data.url);},\"json\");}requestApix(function(data){location.href=sign(data);})}catch(e){}location.href=document.querySelector(\"#playleft iframe\").src;';
+        input = {
+            parse: 1,
+            url: input,
+            click: js,
+            js: js
+        };
+    }),
   limit: 6,
   推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
   double: true,
