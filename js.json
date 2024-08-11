@@ -48,6 +48,7 @@
 {"key":"drpy_js_即看影视","name":"即看影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/即看影视.js"},
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_咖啡影视","name":"咖啡影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/咖啡影视.js"},
+{"key":"drpy_js_可达影视","name":"可达影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可达影视.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
 {"key":"drpy_js_量子影视","name":"量子影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/量子影视.js"},
@@ -73,6 +74,7 @@
 {"key":"drpy_js_宇航影视","name":"宇航影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宇航影视.js"},
 {"key":"drpy_js_在线之家","name":"在线之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/在线之家.js"},
 {"key":"drpy_js_孜然影视","name":"孜然影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/孜然影视.js"},
+
 
 {"key":"push_agent","name":"手机 | 推送[jar]","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"ext":"http://127.0.0.1:9978/file/TV/token.json", "timeout":30},
 {"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext": "./json/market.json"}
