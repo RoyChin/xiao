@@ -30,7 +30,7 @@ var rule = {
         title: 'h3&&Text;p.row&&span&&a&&Text',
         img: 'img.lazyload&&data-original',
         desc: 'p.row&&span:eq(-1)&&Text;p.row&&span:eq(2)&&Text;p.row&&span:eq(1)&&Text;p.row&&span:eq(4)&&Text;p.row&&span:eq(3)&&Text;',
-        content: '.more-box&&Text',
+        content: 'div.text-row-2&&Text',
         tabs: '.playlist-tab&&ul&&li',
         lists: '.ewave-playlist-content:eq(#id)&&li',
         tab_text: 'body&&Text',
