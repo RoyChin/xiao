@@ -19,7 +19,7 @@
 "sites":[
 {"key":"drpy_js_4k剧院","name":"4k剧院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/4k剧院.js"},
 {"key":"drpy_js_539影视","name":"539影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/539影视.js"},
-{"key":"drpy_js_8号影院_decrypted","name":"8号影院_decrypted","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院_decrypted.js"},
+{"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
 {"key":"drpy_js_Auete影视","name":"Auete影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/Auete影视.js"},
 {"key":"drpy_js_B站影视","name":"B站影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_cally66影视","name":"cally66影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/cally66影视.js"},
@@ -54,6 +54,7 @@
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
 {"key":"drpy_js_天启","name":"天启","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天启.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
+{"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_我爱跟剧","name":"我爱跟剧","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/我爱跟剧.js"},
 {"key":"drpy_js_侠客影视","name":"侠客影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/侠客影视.js"},
 {"key":"drpy_js_小白菜电影","name":"小白菜电影","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/小白菜电影.js"},
