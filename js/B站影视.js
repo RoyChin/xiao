@@ -12,32 +12,14 @@ var rule = {
     },
     class_parse: '.fixed-nav&&.flex:lt(4);li&&Text;li&&data-id;(\\d+)',
     play_parse:true,
-    lazy:  `js:
-  let html = request(input);
-  let hconf = html.match(/r player_.*?=(.*?)</)[1];
-  let json = JSON5.parse(hconf);
-  let url = json.url;
-  if (json.encrypt == '1') {
-    url = unescape(url);
-  } else if (json.encrypt == '2') {
-    url = unescape(base64Decode(url));
-  }
-  if (/\\.(m3u8|mp4|m4a|mp3)/.test(url)) {
-    input = {
-      parse: 0,
-      jx: 0,
-      url: url,
-    };
-  }
-  if (url.includes('NBY-')) {
-    let jx = 'https://json.uuys.cc/?url='
-            input={jx:0,url:jx+url,parse:1,
-                header: JSON.stringify({
-                    'referer': input
-                })}
-        } else {
-    input = url && url.startsWith('http') && tellIsJx(url) ? {parse:0,jx:1,url:url}:input;
-  }`,
+	    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            js: 'document.querySelector("#playleft iframe").contentWindow.document.querySelector("#player").click()',
+        }
+    }),
+
     limit:6,
     推荐:'*',
     // 推荐:'.movie-list-body&&.movie-list-item;.movie-title&&Text;.Lazy&&data-original;.movie-rating&&Text;a&&href',
