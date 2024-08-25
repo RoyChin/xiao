@@ -2,6 +2,9 @@ var rule = {
     模板: '首图2',
     title:'泥巴影院',
     host: 'https://nbys.app',
+	    headers:{
+        'User-Agent':'PC_UA'
+    },
     url:'/genre/fyclass---fypage/by/time.html',
     searchUrl:'/search/**----------fypage---.html',
                 二级: {
