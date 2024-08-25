@@ -5,6 +5,9 @@ var rule = {
 	title:'4K剧院', //原91free
 	模板:'mxpro',
 	host:'https://www.4k4k.live',
+	    headers:{
+        'User-Agent':'PC_UA'
+    },
 	url:'/vodshow/fyfilter.html',
 	filterable:1,//是否启用分类筛选,
 	filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
