@@ -7,7 +7,7 @@
 	"url":"https://gitdl.cn/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
-	"logo":"https://epg.112114.eu.org/logo/{name}.png",
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"
 	},
 {
 	"name":"kimwang1978",
