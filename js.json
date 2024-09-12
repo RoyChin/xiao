@@ -15,7 +15,7 @@
 	"url":"https://gitdl.cn/https://raw.githubusercontent.com/xiaoxiao2020/collect-tv-txt/main/merged_output.m3u",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
-	"logo":"https://epg.112114.eu.org/logo/{name}.png"},
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"}
 ],
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "sites":[
