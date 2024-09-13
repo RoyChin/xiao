@@ -33,9 +33,9 @@ var rule = {
     limit: 20,
     推荐: '.section-box:eq(2)&&.module-box-inner&&.module-item;*;*;*;*',
     double: false,
-    一级: '.module-box-inner&&.module-item;.v-item-title:eq(-1)&&Text;img&&data-original;.v-item-bottom&&span&&Text;a&&href',
+    一级: '.module-box-inner&&.module-item;.v-item-title:eq(1)&&Text;img&&data-original;.v-item-bottom&&span&&Text;a&&href',
     二级: {
-        title: '.detail-title&&Text;.detail-tags&&a:eq(-2)&&Text',
+        title: '.detail-pic&&img&&alt;.detail-tags&&a:eq(-2)&&Text',
         img: '.detail-pic&&img&&data-original',
         desc: '.detail-info-row-main:eq(-2)&&Text;.detail-tags&&a&&Text;.detail-tags&&a:eq(1)&&Text;.detail-info-row-main:eq(1)&&Text;.detail-info-row-main&&Text',
         content: '.detail-desc&&Text',
