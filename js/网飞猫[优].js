@@ -35,7 +35,7 @@ var rule = {
     double: false,
     一级: '.module-box-inner&&.module-item;.v-item-title:eq(1)&&Text;img:last-of-type&&data-original;.v-item-bottom&&span:eq(1)&&Text;a&&href',
     二级: {
-        title: '.detail-pic&&img&&alt;.detail-tags&&a:eq(-2)&&Text',
+        title: '.detail-pic&&img&&alt;.detail-tags&&a&&Text',
         img: '.detail-pic&&img&&data-original',
         desc: '.detail-info-row-main:eq(-2)&&Text;.detail-tags&&a&&Text;.detail-tags&&a:eq(1)&&Text;.detail-info-row-main:eq(1)&&Text;.detail-info-row-main&&Text',
         content: '.detail-desc&&Text',
