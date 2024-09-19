@@ -1,5 +1,5 @@
-import cheerio from 'assets://drpy_libs/cheerio.min.js';
-import 'assets://drpy_libs/crypto-js.js';
+import cheerio from 'assets://js/lib/cheerio.min.js';
+import 'assets://js/lib/crypto-js.js';
 import './jsencrypt.js';
 import './node-rsa.js';
 import './pako.min.js';
