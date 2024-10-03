@@ -12,13 +12,7 @@ var rule = {
 	url: '/fyclassfyfilter/indexfypage.html[/fyclassfyfilter/index.html]',
 	filterable: 1,
 	filter_url: '{{fl.class}}',
-	filter: {
-		"Movie":[{"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"喜剧片","v":"/xjp"},{"n":"动作片","v":"/dzp"},{"n":"爱情片","v":"/aqp"},{"n":"科幻片","v":"/khp"},{"n":"恐怖片","v":"/kbp"},{"n":"惊悚片","v":"/jsp"},{"n":"战争片","v":"/zzp"},{"n":"剧情片","v":"/jqp"}]}],
-		"Tv":[{"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"美剧","v":"/oumei"},{"n":"韩剧","v":"/hanju"},{"n":"日剧","v":"/riju"},{"n":"泰剧","v":"/yataiju"},{"n":"网剧","v":"/wangju"},{"n":"台剧","v":"/taiju"},{"n":"国产","v":"/neidi"},{"n":"港剧","v":"/tvbgj"},{"n":"英剧","v":"/yingju"}]}],
-		"Zy":[{"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"国综","v":"/guozong"},{"n":"韩综","v":"/hanzong"},{"n":"美综","v":"/meizong"}]}],
-		"Dm":[{"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"动画","v":"/donghua"},{"n":"日漫","v":"/riman"},{"n":"国漫","v":"/guoman"},{"n":"美漫","v":"/meiman"}]}],
-		"qita":[{"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"记录片","v":"/Jlp"},{"n":"经典片","v":"/Jdp"},{"n":"经典剧","v":"/Jdj"},{"n":"网大电影","v":"/wlp"},{"n":"国产老电影","v":"/laodianying"}]}]
-	},
+	filter: 'H4sIAAAAAAAAA63TQU/CMBgG4P/SM4l3zp5IvHnScChuGRujE3EoEBKQEAETkQTRCIkXDTMmCjEmCMxfwzb4F3YbbO88c1yfdn379WuZHGgFWSTx4zLJiEUSJycqzedJjDCa5cPEao3seoN/F6iq+/OYO9ww1nXDHeYfpBLbjPaHfL7Tut7A3qVyGmLbWJpDQKEUotOc8G0AaQ5w1LV+5oCZdIh27c6u9hFTgPW2ffUEqOQBm4/LWQuwBIH8c+NKN1CykoyRw8KOyuX83vL52w00PSvKga2f38DSlCl6GPzhFexMRvoaAxXpOUV1zC7oBWUSoNXBpdGF1sBczgJjoiyESe3pJ64rpCQlsNXNBOPI/oZeFY+Ku2q6genMF9s9JF0raUzCOoLyOkaU3wAor7+vXsD97K4Ctg2nNw+6nu+Q1ilepr14Dy8zSxkeDYwfDZFnB+TZPfSi5+RzuqPwq4+xZd7DO0io8DDnHasxRRT+I1x/QlAinfgycnrfljkJ+hH+7DfcqlqLTlGpJsiUuY3kHbXyB3CdP/rABAAA',
 	searchUrl: '/auete3so.php?page=fypage&searchword=**',
 	searchable: 2,
 	quickSearch: 1,
@@ -29,7 +23,13 @@ var rule = {
 	class_parse: '.mr-auto li:gt(0):lt(6);a&&Text;a&&href;/(\\w+)/index.html',
     tab_remove:'云播F线',
 	play_parse: true,
-	lazy:'',
+	    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            js: 'document.querySelector("#player iframe").contentWindow.document.querySelector("#myVideo").click()',
+        }
+    }),
 	limit: 6,
     
 	推荐: '*',
