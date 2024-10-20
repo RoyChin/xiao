@@ -20,7 +20,7 @@ var rule = {
         input = {
             parse: 1,
             url: input,
-            js: "document.getElementById('my-video').querySelector('video').play().catch(console.error);",
+            js: 'document.querySelector("#my-video video").play()',
         }
     }),
     limit: 20,
