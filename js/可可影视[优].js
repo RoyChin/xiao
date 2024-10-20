@@ -18,7 +18,13 @@ var rule = {
     tab_order: ['超清', '蓝光', '极速蓝光'],
     tab_remove:['4K(高峰不卡)'],
     play_parse: true,
-    lazy: '',
+	    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            js: 'document.querySelector("#my-video video").contentWindow.document.querySelector("#my-video video").click()',
+        }
+    }),
     limit: 20,
     推荐: '.section-box:eq(2)&&.module-box-inner&&.module-item;*;*;*;*',
     double: false,
