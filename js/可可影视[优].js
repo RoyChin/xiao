@@ -22,7 +22,7 @@ var rule = {
         input = {
             parse: 1,
             url: input,
-            js: 'document.querySelector("#my-video video").contentWindow.document.querySelector("#my-video video").click()',
+            js: 'document.querySelector("#my-video video").click()',
         }
     }),
     limit: 20,
