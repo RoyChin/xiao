@@ -4,7 +4,7 @@ var rule = {
     title:'素白白',
     // host:'https://www.subaibaiys.com',
     host:'https://subaibai.vip',
-    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src = jsp.pdfh(html,".go:eq(0)&&a&&href");print(src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
+    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src = jsp.pdfh(html,".go:eq(1)&&a&&href");print(src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
     // url:'/fyclass/page/fypage',
     url:'/fyclassfyfilter',
     filterable:1,//是否启用分类筛选,
@@ -22,7 +22,7 @@ var rule = {
     // lazy:'',
     lazy:`js:
         pdfh = jsp.pdfh;
-        var html = request(input);
+        var html = request(input.replace('www.subaibaiys.com', 'www.subaibai.com'));
         var ohtml = pdfh(html, '.videoplay&&Html');
         var url = pdfh(ohtml, "body&&iframe&&src");
         if (/Cloud/.test(url)) {
@@ -56,6 +56,9 @@ var rule = {
     推荐:'.leibox&&li;*;*;*;*',
     // double:true, // 推荐内容是否双层定位
     一级:'.mrb&&li;img&&alt;img&&data-original;.jidi&&Text;a&&href',
+    二级访问前: $js.toString(() => {
+        MY_URL = MY_URL.replace('www.subaibaiys.com', 'www.subaibai.com');
+    }),
     二级:{
         "title":"h1&&Text;.moviedteail_list&&li:eq(0)&&Text",
         "img":".dyimg&&img&&src",
