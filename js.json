@@ -53,7 +53,7 @@
 {"key":"drpy_js_天启","name":"天启","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天启.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
-{"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"},
+{"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
 
 //{"key":"push_agent","name":"手机 | 推送[jar]","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"ext":"http://127.0.0.1:9978/file/TV/token.json", "timeout":30},
 //{"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext": "./json/market.json"}
