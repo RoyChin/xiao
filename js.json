@@ -30,6 +30,7 @@
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
 {"key":"drpy_js_爱优影视[自动]","name":"爱优影视[自动]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱优影视[自动].js"},
 {"key":"drpy_js_宝片视频","name":"宝片视频","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宝片视频.js"},
+{"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
 {"key":"drpy_js_哔嘀影视","name":"哔嘀影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/哔嘀影视.js"},
 {"key":"drpy_js_厂长资源","name":"厂长资源","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/厂长资源.js"},
 {"key":"drpy_js_刺猬影视","name":"刺猬影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/刺猬影视.js"},
@@ -40,6 +41,7 @@
 {"key":"drpy_js_短剧TV网","name":"短剧TV网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/短剧TV网.js"},
 {"key":"drpy_js_干饭影视","name":"干饭影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/干饭影视.js"},
 {"key":"drpy_js_冠建影视","name":"冠建影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/冠建影视.js"},
+{"key":"drpy_js_极速资源[资]","name":"极速资源[资]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/极速资源[资].js"},
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
@@ -54,6 +56,7 @@
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
+
 
 //{"key":"push_agent","name":"手机 | 推送[jar]","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"ext":"http://127.0.0.1:9978/file/TV/token.json", "timeout":30},
 //{"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext": "./json/market.json"}
