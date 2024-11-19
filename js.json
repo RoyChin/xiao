@@ -38,13 +38,11 @@
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
 {"key":"drpy_js_电影狗","name":"电影狗","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/电影狗.js"},
 {"key":"drpy_js_短剧TV网","name":"短剧TV网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/短剧TV网.js"},
-{"key":"drpy_js_干饭影视","name":"干饭影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/干饭影视.js"},
 {"key":"drpy_js_冠建影视","name":"冠建影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/冠建影视.js"},
 {"key":"drpy_js_极速资源[资]","name":"极速资源[资]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/极速资源[资].js"},
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
-{"key":"drpy_js_泥巴影院","name":"泥巴影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/泥巴影院.js"},
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
 {"key":"drpy_js_热播之家","name":"热播之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热播之家.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
@@ -55,6 +53,7 @@
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
+
 
 
 
