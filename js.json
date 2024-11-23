@@ -4,7 +4,7 @@
 {
 	"name":"fanmingming_IPTV6",
 	"type":0,
-	"url":"/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+	"url":"https://gh.llkk.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
@@ -12,7 +12,7 @@
 {
 	"name":"kimwang1978",
 	"type":0,
-	"url":"/https://raw.githubusercontent.com/xiaoxiao2020/collect-tv-txt/main/merged_output_simple.m3u",
+	"url":"https://gh.llkk.cc/https://raw.githubusercontent.com/xiaoxiao2020/collect-tv-txt/main/merged_output_simple.m3u",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
