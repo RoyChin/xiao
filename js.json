@@ -37,28 +37,22 @@
 {"key":"drpy_js_蛋蛋剧","name":"蛋蛋剧","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/蛋蛋剧.js"},
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
 {"key":"drpy_js_电影狗","name":"电影狗","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/电影狗.js"},
-{"key":"drpy_js_短剧TV网","name":"短剧TV网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/短剧TV网.js"},
 {"key":"drpy_js_冠建影视","name":"冠建影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/冠建影视.js"},
 {"key":"drpy_js_极速资源[资]","name":"极速资源[资]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/极速资源[资].js"},
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
+{"key":"drpy_js_魔方影视","name":"魔方影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/魔方影视.js"},
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
 {"key":"drpy_js_热播之家","name":"热播之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热播之家.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_如意影视","name":"如意影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/如意影视.js"},
 {"key":"drpy_js_素白白","name":"素白白","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/素白白.js"},
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
-{"key":"drpy_js_天启","name":"天启","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天启.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
 
-
-
-
-//{"key":"push_agent","name":"手机 | 推送[jar]","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"ext":"http://127.0.0.1:9978/file/TV/token.json", "timeout":30},
-//{"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext": "./json/market.json"}
 ],
 
 "parses":[
