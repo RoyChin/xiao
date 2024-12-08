@@ -28,11 +28,9 @@
 {"key":"drpy_js_B站影视","name":"B站影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
-{"key":"drpy_js_爱优影视[自动]","name":"爱优影视[自动]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/爱优影视[自动].js"},
 {"key":"drpy_js_宝片视频","name":"宝片视频","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宝片视频.js"},
 {"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
 {"key":"drpy_js_厂长资源","name":"厂长资源","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/厂长资源.js"},
-{"key":"drpy_js_刺猬影视","name":"刺猬影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/刺猬影视.js"},
 {"key":"drpy_js_达达龟","name":"达达龟","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/达达龟.js"},
 {"key":"drpy_js_蛋蛋剧","name":"蛋蛋剧","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/蛋蛋剧.js"},
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
@@ -44,7 +42,6 @@
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
 {"key":"drpy_js_魔方影视","name":"魔方影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/魔方影视.js"},
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
-{"key":"drpy_js_热播之家","name":"热播之家","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热播之家.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_如意影视","name":"如意影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/如意影视.js"},
 {"key":"drpy_js_素白白","name":"素白白","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/素白白.js"},
@@ -52,6 +49,7 @@
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
+
 
 ],
 
