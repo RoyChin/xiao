@@ -32,4 +32,5 @@ var rule = {
     }),
     搜索: '.ulPicTxt li;.txtHeight .sTit&&Text;.lazyload&&data-src;;.pBottom a&&href;',
 	搜索验证标识:'系统安全验证',
+	searchNoPage:1,
 }
