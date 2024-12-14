@@ -22,11 +22,11 @@
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 
 "sites":[
-{"key":"drpy_js_4k剧院","name":"4k剧院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/4k剧院.js"},
 {"key":"drpy_js_539影视","name":"539影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/539影视.js"},
 {"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
 {"key":"drpy_js_B站影视","name":"B站影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
+{"key":"drpy_js_TVB云播","name":"TVB云播","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/TVB云播.js"},
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
 {"key":"drpy_js_宝片视频","name":"宝片视频","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宝片视频.js"},
 {"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
@@ -48,7 +48,7 @@
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
-{"key":"drpy_js_影视工场","name":"影视工场","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/影视工场.js"}
+{"key":"drpy_js_星辰CT","name":"星辰CT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰CT.js"}
 
 
 ],
