@@ -22,7 +22,6 @@
 "wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 
 "sites":[
-{"key":"drpy_js_539影视","name":"539影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/539影视.js"},
 {"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
 {"key":"drpy_js_B站影视","name":"B站影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
