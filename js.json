@@ -23,7 +23,6 @@
 
 "sites":[
 {"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
-{"key":"drpy_js_B站影视","name":"B站影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/B站影视.js"},
 {"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
 {"key":"drpy_js_TVB云播","name":"TVB云播","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/TVB云播.js"},
 {"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
@@ -48,6 +47,7 @@
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
 {"key":"drpy_js_星辰CT","name":"星辰CT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰CT.js"}
+
 
 
 ],
