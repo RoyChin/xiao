@@ -6,16 +6,12 @@ var rule = {
     searchUrl: '/vod-search-wd-**-pagefypage.html',
     searchable: 2,
     quickSearch: 0,
-    filterable: 1,
-    filter: '',
-    filter_url: '',
-    filter_def: {},
     headers: {
         'Accept-Language': 'zh-CN',
         'User-Agent': 'PC_UA',
     },
     timeout: 5000,
-    class_parse: 'ul.navbar-nav&&li:not(.dropdown);a&&Text;a&&href;cc\/(.*?)-page1\.html',
+    class_parse: 'ul.navbar-nav li[id^="nav"];a&&Text;a&&href;cc\/(.*?)-page1\.html',
     cate_exclude: '',
     play_parse: true,
     lazy: $js.toString(() => {
@@ -25,8 +21,8 @@ var rule = {
             js: 'document.querySelector("#yunplay iframe").contentWindow.document.querySelector(".dplayer-mobile-play").click()',
         }
     }),
-    double: true,
-    推荐: '.layout-box;li;*;*;*;*;*',
+    //double: true,
+    推荐: '.layout-box li[class*="col-sm-3"];*;*;*;*;*',
     一级: '.box-video-list&&ul&&li;a&&title;a&&data-original;.note&&Text;a&&href;.subtitle&&Text',
     二级: {
         title: 'h1--em&&Text;ul.info&&li:eq(2)&&Text',

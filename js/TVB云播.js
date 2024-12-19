@@ -3,6 +3,9 @@ var rule = {
     host: 'http://www.tvyb03.com',
     url: '/vod/type/id/fyclass/page/fypage.html',
     searchUrl:'/vod/search/page/fypage/wd/**.html',
+    搜索: '#searchList li;a&&title;.lazyload&&data-original;span.tag&&Text;a&&href;.detail&&Text',
+    推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;span.tag&&Text;a&&href',
+    一级: '.myui-vodlist li;a&&title;a&&data-original;span.tag&&Text;a&&href',
         二级: {
         "title": "h1&&Text;.data:eq(0) a:eq(0)&&Text",
         "img": ".lazyload&&data-original",
