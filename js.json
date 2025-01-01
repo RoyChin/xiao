@@ -46,7 +46,8 @@
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
-{"key":"drpy_js_星辰CT","name":"星辰CT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰CT.js"}
+{"key":"drpy_js_星辰CT","name":"星辰CT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰CT.js"},
+{"key":"drpy_js_修罗影视","name":"修罗影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/修罗影视.js"}
 
 
 
