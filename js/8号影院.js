@@ -23,17 +23,20 @@ var rule = {
     4: {
       按分类: "4"
     }
-  },
+    },
     searchUrl: '/search.php?page=fypage&searchword=**   &searchtype=',
     class_parse: ".stui-tou__menu li;a&&Text;a&&href;.*/(.*?).html",
     lazy: $js.toString(() => {
-        let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
-        input = {
-            parse: 1,
-            url: input,
-            js: '',
-            parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
-        }
+    let url = base64Decode(request(input).match(/now=base64decode\("(.+?)"\);var/)[1]);
+    if (/\.(m3u8|mp4|m4a|mp3)/.test(url)) {
+    input = {
+      parse: 0,
+      jx: 0,
+      url: url,
+    };
+    } else {
+    input = url && url.startsWith('http') && tellIsJx(url) ? {parse:0,jx:1,url:url}:input;
+    }
     }),
     搜索: '.stui-vodlist__media&&li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
 }
