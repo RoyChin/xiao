@@ -23,9 +23,7 @@
 
 "sites":[
 {"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
-{"key":"drpy_js_libvio","name":"libvio","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/libvio.js"},
 {"key":"drpy_js_TVB云播","name":"TVB云播","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/TVB云播.js"},
-{"key":"drpy_js_voflix","name":"voflix","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/voflix.js"},
 {"key":"drpy_js_宝片视频","name":"宝片视频","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/宝片视频.js"},
 {"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
 {"key":"drpy_js_厂长资源","name":"厂长资源","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/厂长资源.js"},
@@ -38,7 +36,6 @@
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
-{"key":"drpy_js_魔方影视","name":"魔方影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/魔方影视.js"},
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_如意影视","name":"如意影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/如意影视.js"},
@@ -57,7 +54,6 @@
 {"name":"Json聚合","type":3,"url":"Demo"},
 {"name":"虾米","url":"https://jx.xmflv.com/?url=","type":0,"ext":{"flag":["qiyi","imgo","爱奇艺","奇艺","qq","qq预告及花絮","腾讯","youku","优酷","pptv","PPTV","letv","乐视","leshi","mgtv","芒果","sohu","xigua","fun","风行"]},"header":{"User-Agent":"Mozilla/5.0"}},
 {"name":"虾米2","url":"https://jx.xmflv.cc/?url=","type":0,"ext":{"flag":["qiyi","imgo","爱奇艺","奇艺","qq","qq预告及花絮","腾讯","youku","优酷","pptv","PPTV","letv","乐视","leshi","mgtv","芒果","sohu","xigua","fun","风行"]},"header":{"User-Agent":"Mozilla/5.0"}},
-{"name":"ik9","url":"https://yparse.ik9.cc/index.php?url=","type":0,"ext":{"flag":["qiyi","imgo","爱奇艺","奇艺","qq","qq预告及花絮","腾讯","youku","优酷","pptv","PPTV","letv","乐视","leshi","mgtv","芒果","sohu","xigua","fun","风行"]},"header":{"User-Agent":"Mozilla/5.0"}},
 {"name":"麒麟","url":"https://pl.a6club.com/player/analysis.php?v=","type":0,"ext":{"flag":["qiyi","imgo","爱奇艺","奇艺","qq","qq预告及花絮","腾讯","youku","优酷","pptv","PPTV","letv","乐视","leshi","mgtv","芒果","sohu","xigua","fun","风行"]},"header":{"User-Agent":"Mozilla/5.0"}}
 ],
 
