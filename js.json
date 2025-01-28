@@ -16,6 +16,14 @@
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
+	},
+	{
+	"name":"咪咕高清",
+	"type":0,
+	"url":"http://tv.tttttttttt.top/0/咪咕高清.txt",
+	"playerType":1,
+	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"
 	}
 ],
 
