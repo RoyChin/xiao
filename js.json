@@ -1,5 +1,6 @@
 {
 //"spider":"./jar/pg.jar;md5;d253420b95d2b9e3ab8904a92218d6f6",
+//"wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "lives":[
 {
 	"name":"fanmingming_IPTV6",
@@ -27,7 +28,6 @@
 	}
 ],
 
-"wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 
 "sites":[
 {"key":"drpy_js_8号影院","name":"8号影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/8号影院.js"},
@@ -43,7 +43,6 @@
 {"key":"drpy_js_金金虫","name":"金金虫","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/金金虫.js"},
 {"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
-{"key":"drpy_js_两个BT","name":"两个BT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/两个BT.js"},
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_如意影视","name":"如意影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/如意影视.js"},
