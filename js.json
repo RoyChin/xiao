@@ -46,7 +46,6 @@
 {"key":"drpy_js_七新电影网","name":"七新电影网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/七新电影网.js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_如意影视","name":"如意影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/如意影视.js"},
-{"key":"drpy_js_素白白","name":"素白白","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/素白白.js"},
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
