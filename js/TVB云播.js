@@ -1,6 +1,7 @@
+//发布页http://www.hktvyb.vip/
 var rule = {
     模板: '自动',
-    host: 'http://www.tvyb03.com',
+    host: 'http://www.tvyun06.com',
     url: '/vod/type/id/fyclass/page/fypage.html',
     searchUrl:'/vod/search/page/fypage/wd/**.html',
     搜索: '#searchList li;a&&title;.lazyload&&data-original;span.tag&&Text;a&&href;.detail&&Text',

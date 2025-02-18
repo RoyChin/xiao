@@ -1,2 +1,5 @@
 
 /js/error_files
+/drpy_libs/node_modules
+drpy_libs/package-lock.json
+drpy_libs/package.json
