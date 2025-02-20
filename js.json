@@ -3,25 +3,33 @@
 //"wallpaper":"https://jianbian.chuqiuyu.workers.dev",
 "lives":[
 {
-	"name":"fanmingming_IPTV6",
+	"name":"Tv1",
 	"type":0,
-	"url":"https://gh.llkk.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+	"url":"https://gh.tryxd.cn/https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整套直播源/kk.txt",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
 	},
 {
-	"name":"kimwang1978",
+	"name":"Tv2",
 	"type":0,
-	"url":"https://gh.llkk.cc/https://raw.githubusercontent.com/xiaoxiao2020/collect-tv-txt/main/merged_output_simple.m3u",
+	"url":"https://ghfast.top/raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
 	},
 	{
-	"name":"咪咕高清",
+	"name":"Tv3",
 	"type":0,
-	"url":"http://tv.tttttttttt.top/0/咪咕高清.txt",
+	"url":"https://ghfast.top/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
+	"playerType":1,
+	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
+	"logo":"https://epg.112114.eu.org/logo/{name}.png"
+	},
+{
+	"name":"Tv4",
+	"type":0,
+	"url":"https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.txt",
 	"playerType":1,
 	"epg":"https://epg.112114.eu.org/?ch={name}&date={date}",
 	"logo":"https://epg.112114.eu.org/logo/{name}.png"
