@@ -41,11 +41,12 @@ function verifyLogin(url) {
 
 globalThis.verifyLogin = verifyLogin;
 
+//https://www.jugege.vip发布页
 var rule = {
     模板: 'mxpro',
     title: '剧哥哥',//https://jugege.com/
-    host: 'https://www.jugege.vip',//发布页
-    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(0)&&href");print(src);HOST=src',
+    host: 'https://www.jugege.tv',
+    //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(0)&&href");print(src);HOST=src',
     headers:{//网站的请求头,完整支持所有的,常带ua和cookies
         'User-Agent':'PC_UA',
     },
