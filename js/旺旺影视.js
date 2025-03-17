@@ -12,6 +12,7 @@ var rule = {
     class_parse: '.topnav li;a&&Text;a&&href;/vod-type-id-(\\d+)-pg-1.html',
     cate_exclude: '音乐',
     double: false,
+    图片替换:'https://pic.lzzypic.com/=>https://img.lzzyimg.com/',
     推荐: '.globalPicList li:has(.pic);a&&title;img&&src;.sBottom--em&&Text;a&&href;.sBottom--em&&Text',
     一级: '.globalPicList li:has(.pic);a&&title;img&&src;.sBottom--em&&Text;a&&href',
      二级: {
