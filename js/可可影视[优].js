@@ -37,7 +37,7 @@ var rule = {
         //tabs: 'body&&.source-item-label[id]',
         lists: '.episode-list:eq(#id) a',
     },
-    搜索: '.search-result-list&&a;.title&&Text;*;.search-result-item-header&&Text;a&&href;.desc&&Text',
+    搜索: '.search-result-list&&a;.title&&Text;.lazyload:not([id])&&data-original;.search-result-item-header&&Text;a&&href;.desc&&Text',
     预处理: $js.toString(() => {
         let html = request(rule.host);
         let scripts = pdfa(html, 'script');
