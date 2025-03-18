@@ -9,5 +9,6 @@ var rule = {
   //推荐: '.cbox_list:gt(-1):lt(4);*;*;*;*;*',
   //一级: 'ul.vodlist li;a&&title;.vodlist_thumb&&data-original;.pic_text&&Text;a&&href',
 
-    搜索: '.hl-one-list li;.hl-item-title a&&title;.hl-item-pic a&&data-original;.hl-lc-1&&Text;.hl-item-title a&&href;p.hl-lc-2&&Text',
+    //搜索: '.hl-one-list li;.hl-item-title a&&title;.hl-item-pic a&&data-original;.hl-lc-1&&Text;.hl-item-title a&&href;p.hl-lc-2&&Text',
+	搜索: '.stui-vodlist__media li;h3 a&&Text;.thumb a&&data-original;.thumb .pic-text&&Text;.thumb a&&href;p.hl-lc-2&&Text',
 }
