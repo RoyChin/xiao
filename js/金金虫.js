@@ -12,5 +12,6 @@ var rule = {
   //推荐: '.cbox_list:gt(-1):lt(4);*;*;*;*;*',
   //一级: 'ul.vodlist li;a&&title;.vodlist_thumb&&data-original;.pic_text&&Text;a&&href',
 
-    搜索: '.stui-vodlist__media li;h3 a&&Text;.thumb a&&data-original;.thumb .pic-text&&Text;.thumb a&&href;p.hl-lc-2&&Text',
+  //搜索: 'div.row li;h3 a&&Text;.thumb a&&data-original;.thumb .pic-text&&Text;.thumb a&&href;p.hl-lc-2&&Text',
+  搜索: 'div.row li;div.hl-lc-2&&Text;.hl-lazy&&data-original;.remarks&&Text;.hl-lazy&&href;p.hl-lc-2&&Text',
 }
