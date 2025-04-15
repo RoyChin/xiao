@@ -18,14 +18,14 @@
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
 {"key":"drpy_js_极速资源[资]","name":"极速资源[资]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/极速资源[资].js"},
 {"key":"drpy_js_金金虫","name":"金金虫","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/金金虫.js"},
+{"key":"drpy_js_剧哥哥","name":"剧哥哥","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/剧哥哥.js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
 {"key":"drpy_js_天龙影院","name":"天龙影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/天龙影院.js"},
 {"key":"drpy_js_网飞猫[优]","name":"网飞猫[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/网飞猫[优].js"},
 {"key":"drpy_js_旺旺影视","name":"旺旺影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/旺旺影视.js"},
-{"key":"drpy_js_星辰CT","name":"星辰CT","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰CT.js"},
+{"key":"drpy_js_星辰影院","name":"星辰影院","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/星辰影院.js"},
 {"key":"drpy_js_修罗影视","name":"修罗影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/修罗影视.js"}
-
 ],
 
 "parses":[
