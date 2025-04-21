@@ -48,7 +48,7 @@ var rule = {
     host: 'https://www.jugege.tv',
     //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(0)&&href");print(src);HOST=src',
     headers:{//网站的请求头,完整支持所有的,常带ua和cookies
-        'User-Agent':'PC_UA',
+        'User-Agent':'MOBILE_UA',
     },
     class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
     url: '/vodshow/fyclass--------fypage---.html',
