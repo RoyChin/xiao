@@ -52,25 +52,8 @@ var rule = {
     },
     class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
     url: '/vodshow/fyclass--------fypage---.html',
-    searchUrl: '/rss/index.xml?wd=**',
-    搜索: $js.toString(() => {
-        let html = request(input);
-        let items = pdfa(html, 'rss&&item');
-        // log(items);
-        let d = [];
-        items.forEach(it => {
-            it = it.replace(/title|link|author|pubdate|description/g, 'p');
-            let url = pdfh(it, 'p:eq(1)&&Text');
-            d.push({
-                title: pdfh(it, 'p&&Text'),
-                url: url,
-                desc: pdfh(it, 'p:eq(3)&&Text'),
-                content: pdfh(it, 'p:eq(2)&&Text'),
-                pic_url: "",
-            });
-        });
-        setResult(d);
-    }),
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    搜索:'.module-card-items .module-item;.module-card-item-title a&&Text;.module-item-pic img&&data-original;.module-item-note&&Text;.module-card-item-title a&&href',
     
     一级二: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     一级: $js.toString(() => {
