@@ -4,7 +4,7 @@ var rule = {
     //host: 'https://www.kkys01.com',
     url: '/show/fyclass-----2-fypage.html',
     //url: '/show/fyclass-fyfilter-fypage.html',
-    searchUrl: '/search?k=**&page=fypage&os=pc',
+    searchUrl: '/search',
     searchable: 2,
     quickSearch: 0,
     filterable: 1,
@@ -37,7 +37,6 @@ var rule = {
         //tabs: 'body&&.source-item-label[id]',
         lists: '.episode-list:eq(#id) a',
     },
-    搜索: '.search-result-list&&a;.title&&Text;.lazyload:not([id])&&data-original;.search-result-item-header&&Text;a&&href;.desc&&Text',
     预处理: $js.toString(() => {
         let html = request(rule.host);
         let scripts = pdfa(html, 'script');
@@ -51,5 +50,38 @@ var rule = {
             rule.图片替换 = rule.host + '=>' + img_host;
         }
     }),
+    //搜索: '.search-result-list&&a;.title&&Text;.lazyload:not([id])&&data-original;.search-result-item-header&&Text;a&&href;.desc&&Text',
+    搜索: $js.toString(() => {
+    let cookie = getItem(RULE_CK,'');
+    // let cookie = '';
+    log('储存的cookie:'+cookie);
+    pdfh = jsp.pdfh;
+    let htmlsearch = request(input);
+    let t = pdfh(htmlsearch, 'input[name="t"]&&value');
+
+    let hhtml=request(input + "?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
+    let json = JSON.parse(hhtml);
+    let html = json.body;
+    let setCk = Object.keys(json).find(it=>it.toLowerCase()==='set-cookie');
+    cookie = setCk ? json[setCk] : cookie;
+    // 处理多个set-Cookie的情况
+    if (Array.isArray(cookie)) {
+        cookie = cookie.join(';');
+    }
+    cookie = cookie.split(';')[0];
+    log('set-cookie:'+cookie);
+
+    VODS = [];
+    let lis=pdfa(html,'.search-result-list&&a');//列表
+    log(lis.length);
+    lis.forEach(function(it){
+        VODS.push({
+            vod_id: pdfh(it,'a&&href'),//链接                  
+            vod_name: pdfh(it,'.title&&Text'),//标题            
+            vod_pic: pdfh(it,'.lazyload:not([id])&&data-original'),//图片
+            vod_remarks: pdfh(it,'.search-result-item-header&&Text'),//描述      
+        });
+    });
+    }),    
     
 }
