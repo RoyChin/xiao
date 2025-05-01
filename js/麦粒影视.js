@@ -3,7 +3,9 @@ var rule = {
     host: 'https://www.maili.icu',
     url:'/vodshow/fyclass--------fypage---.html',//网站的分类页面链接
     searchUrl:'/vodsearch/**----------fypage---.html',
-    class_parse: 'div.swiper-wrapper a;a&&Text;a&&href;/.*/(\\d+).html',
+    //class_parse: 'div.swiper-wrapper a;a&&Text;a&&href;/.*/(\\d+).html',
+	class_name: '电影&电视剧&动漫',
+    class_url: '1&2&4',
     cate_exclude:'体育赛事|全部影片',
     推荐: '.vod-list ul li;.pic a&&title;div.img-wrapper&&data-original;.text-overflow&&Text;.pic a&&href',
     搜索: '*',    
