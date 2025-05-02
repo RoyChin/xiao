@@ -4,7 +4,7 @@ var rule = {
     //host: 'https://www.kkys01.com',
     url: '/show/fyclass-----2-fypage.html',
     //url: '/show/fyclass-fyfilter-fypage.html',
-    searchUrl: '/search',
+    searchUrl: '/',
     searchable: 2,
     quickSearch: 0,
     filterable: 1,
@@ -48,6 +48,7 @@ var rule = {
             let img_host = img_html.match(/'(.*?)'/)[1];
             log(img_host);
             rule.图片替换 = rule.host + '=>' + img_host;
+            rule.img_host = img_host;
         }
     }),
     //搜索: '.search-result-list&&a;.title&&Text;.lazyload:not([id])&&data-original;.search-result-item-header&&Text;a&&href;.desc&&Text',
@@ -59,7 +60,7 @@ var rule = {
     let htmlsearch = request(input);
     let t = pdfh(htmlsearch, 'input[name="t"]&&value');
 
-    let hhtml=request(input + "?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
+    let hhtml=request(input + "search?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
     let json = JSON.parse(hhtml);
     let html = json.body;
     let setCk = Object.keys(json).find(it=>it.toLowerCase()==='set-cookie');
@@ -78,7 +79,7 @@ var rule = {
         VODS.push({
             vod_id: pdfh(it,'a&&href'),//链接                  
             vod_name: pdfh(it,'.title&&Text'),//标题            
-            vod_pic: pdfh(it,'.lazyload:not([id])&&data-original'),//图片
+            vod_pic: rule.img_host + pdfh(it,'.lazyload:not([id])&&data-original'),//图片
             vod_remarks: pdfh(it,'.search-result-item-header&&Text'),//描述      
         });
     });

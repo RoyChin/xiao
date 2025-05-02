@@ -3,13 +3,11 @@ var rule = {
     host: 'https://www.ncat1.app',
     // url: '/show/fyclass-----2-fypage.html',
     url: '/show/fyclass-----2-fypage.html',
-    searchUrl: '/search',
+    searchUrl: '/',
     searchable: 2,
     quickSearch: 0,
     filterable: 1,
-    headers: {
-        'User-Agent': 'MOBILE_UA',
-    },
+
     class_parse: '#nav-swiper&&.nav-swiper-slide;a&&Text;a&&href;/(\\w+).html',
     cate_exclude: 'Netflix|今日更新|专题列表|排行榜',
     tab_order: ['超清', '蓝光', '极速蓝光'],
@@ -46,6 +44,7 @@ var rule = {
             let img_host = img_html.match(/'(.*?)'/)[1];
             log(img_host);
             rule.图片替换 = 'https://www.ncat1.app=>' + img_host;
+            rule.img_host = img_host;
         }
     }),
     //搜索: '.search-result-list&&a;.title&&Text;.lazyload:not([id])&&data-original;.search-result-item-header&&Text;a&&href;.desc&&Text',
@@ -57,7 +56,7 @@ var rule = {
     let htmlsearch = request(input);
     let t = pdfh(htmlsearch, 'input[name="t"]&&value');
 
-    let hhtml=request(input + "?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
+    let hhtml=request(input + "search?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
     let json = JSON.parse(hhtml);
     let html = json.body;
     let setCk = Object.keys(json).find(it=>it.toLowerCase()==='set-cookie');
@@ -68,7 +67,7 @@ var rule = {
     }
     cookie = cookie.split(';')[0];
     log('set-cookie:'+cookie);
-
+    log('图片：'+ rule.img_host)
     VODS = [];
     let lis=pdfa(html,'.search-result-list&&a');//列表
     log(lis.length);
@@ -76,7 +75,7 @@ var rule = {
         VODS.push({
             vod_id: pdfh(it,'a&&href'),//链接                  
             vod_name: pdfh(it,'.title&&Text'),//标题            
-            vod_pic: pdfh(it,'.lazyload:not([id])&&data-original'),//图片
+            vod_pic: rule.img_host + pdfh(it,'.lazyload:not([id])&&data-original'),//图片
             vod_remarks: pdfh(it,'.search-result-item-header&&Text'),//描述      
         });
     });
