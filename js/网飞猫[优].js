@@ -56,7 +56,7 @@ var rule = {
     let htmlsearch = request(input);
     let t = pdfh(htmlsearch, 'input[name="t"]&&value');
 
-    let hhtml=request(input + "search?k=" + KEY + "&page=" + MY_PAGE + "&t="+ t,{withHeaders:true,headers:{Cookie:cookie}});
+    let hhtml=request(input + "search?k=" + KEY + "&page=" + MY_PAGE + "&t="+ encodeURIComponent(t),{withHeaders:true,headers:{Cookie:cookie}});
     let json = JSON.parse(hhtml);
     let html = json.body;
     let setCk = Object.keys(json).find(it=>it.toLowerCase()==='set-cookie');
