@@ -13,6 +13,7 @@
 {"key":"drpy_js_北川影视","name":"北川影视","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/北川影视.js"},
 {"key":"drpy_js_厂长资源","name":"厂长资源","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/厂长资源.js"},
 {"key":"drpy_js_嘀哩嘀哩","name":"嘀哩嘀哩","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/嘀哩嘀哩.js"},
+{"key":"drpy_js_红果短剧","name":"红果短剧","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/红果短剧.js"},
 {"key":"drpy_js_极速资源[资]","name":"极速资源[资]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/极速资源[资].js"},
 {"key":"drpy_js_可可影视[优]","name":"可可影视[优]","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/可可影视[优].js"},
 {"key":"drpy_js_热片网","name":"热片网","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./js/热片网.js"},
